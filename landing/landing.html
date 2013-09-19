@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Brighter Children</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link media="screen" rel="stylesheet" href="bootstrap/css/bootstrap.css"></link>
+	<link media="screen" rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css"></link>
+	<link media="screen" rel="stylesheet" href="style-bootstrap.css"></link>
+</head>
+<body>
+	<div id="outer-wrapper">
+		<div id="page">
+			<div class="wrapper">
+				<header id="masthead">
+					<nav role="navigation">
+						<a class="brand" href="/">
+							brighter children
+						</a>
+					</nav>
+				</header>
+			</div>
+			<!-- close #wrapper -->
+
+			<div id="content-wrapper">
+				<div id="main" class="container">
+					<section class="row-fluid">
+						<article id="hero-content" class="span6">
+							<h1 class="head">Children in developing countries need a better education.</h1>
+							<h2 class="subhead">Together we can fund their studies.</h2>
+							<h3 class="cta">Join us at our October 12th launch event with Host Committee in New York.</h3>
+							<p>
+								<a class="btn btn-primary btn-large cta-btn" href="http://www.hostcommittee.com">Attend our launch event</a>
+							</p>
+						</article>
+						<article id="hero-video" class="span6">
+							<img class="" src="img/video-screenshot.png" />
+						</article>
+					</section>
+					<form id="email-form" action="/lists/<?php echo $list['id']; ?>/subscribe" method="post">
+						<label>Sign up to learn how you can make a difference</label>
+						<div class="row-fluid">
+							<div class="input-prepend span9">
+							 	<span class="add-on"><i class="icon-envelope"></i></span>
+								<input type="text" placeholder="Email" name="email"></input>
+							</div>
+							<button type="submit" class="btn cta-btn span3">Loop me in</button>
+						</div>
+					</form>
+					<article id="partners">
+						<h3>Partners</h3>
+						<ul>
+							<li><a href="http://www.colombiachildcare.org/"><img src="img/colombia-childcare-150x150.jpg" /></a></li>
+							<li><a href="http://www.akanksha.org/"><img src="img/akanksha-283x150.jpg" /></a></li>
+						</ul>
+					</article>
+					<footer class="footer">
+						<ul class="footer-links">
+							<li><a href="about">About</a></li>
+							<li class="muted">-</li>
+							<li><a href="sponsor">Sponsor a child</a></li>
+							<li class="muted">-</li>
+							<li><a href="faq">FAQ</a></li>
+							<li class="muted">-</li>
+							<li><a href="contact">Contact</a></li>
+						</ul>
+					</footer>
+				</div>
+			</div>
+			<!-- close #content-wrapper -->
+
+		</div>
+		<!-- close #page -->
+	</div>
+	<!-- close #outer-wrapper -->
+
+	<!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.js"></script>
+</body>
+
+</html>

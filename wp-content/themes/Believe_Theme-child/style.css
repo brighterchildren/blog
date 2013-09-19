@@ -1,0 +1,15 @@
+/*
+Theme Name: Believe Child
+Theme URI: http://www.cohhe.com/believe
+Description: Child theme for the Believe theme
+Author: Brighter Children team
+Author URI: http://brighterchildren.org/
+Template: Believe_Theme
+Version: 0.1.0
+*/
+
+@import url("../Believe_Theme/style.css");
+
+.header .main-menu a {
+	text-transform: none;
+}

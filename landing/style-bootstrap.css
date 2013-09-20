@@ -163,6 +163,7 @@ hr.soften {
 }
 
 #email-form {
+	display: none;
 	color: #ffffff;
 	padding: 10px 0 20px 0;
 	border-top: 2px #000000 solid;

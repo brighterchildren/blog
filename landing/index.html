@@ -4,6 +4,7 @@
 	<title>Brighter Children</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link media="screen" rel="stylesheet" href="bootstrap/css/bootstrap.css"></link>
+	<link href='http://fonts.googleapis.com/css?family=Cantora+One' rel='stylesheet' type='text/css'>
 	<link media="screen" rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css"></link>
 	<link media="screen" rel="stylesheet" href="style-bootstrap.css"></link>
 </head>
@@ -21,20 +22,19 @@
 
 			<div id="content-wrapper">
 				<div id="main" class="container">
-					<section class="row-fluid">
-						<article id="hero-content" class="span6">
-							<h1 class="head">Who said nothing good happens after 2am?</h1>
-							<h2 class="subhead">Help us as we change the world, one education, one child at a time.</h2>
-							<h3 class="cta">Buy a ticket and join us Saturday, October 19th in New York.</h3>
-							<p>
-								<a class="btn btn-primary btn-large cta-btn" href="http://www.hostcommittee.com/event/brighter-children-launch-party/details">Attend our launch event</a>
-							</p>
-						</article>
-						<article id="hero-video" class="span6">
-							<div class="video-container">
-								<iframe src="http://www.youtube.com/embed/Iq2Si--s6tw" allowfullscreen="" frameborder="0" height="315" width="560"></iframe>
-							</div>
-						</article>
+					<section id="hero-content" class="row-fluide">
+						<h1 class="head">Who said nothing good happens after 2am?</h1>
+						<h2 class="subhead">Help us as we change the world, one education, one child at a time.</h2>
+						<h3 class="cta">Buy a ticket and join us Saturday, October 19th in New York.</h3>
+						<p>
+							<a class="btn btn-primary btn-large cta-btn" href="http://www.hostcommittee.com/event/brighter-children-launch-party/details">Attend our launch event</a>
+						</p>
+					</section>
+
+					<section id="hero-video" class="row-fluid">
+						<div class="video-container">
+							<iframe src="http://www.youtube.com/embed/Iq2Si--s6tw" allowfullscreen="" frameborder="0" height="315" width="560"></iframe>
+						</div>
 					</section>
 					<form id="email-form" action="/lists/<?php echo $list['id']; ?>/subscribe" method="post">
 						<label>Sign up to learn how you can make a difference</label>

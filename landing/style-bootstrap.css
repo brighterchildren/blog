@@ -184,6 +184,7 @@ hr.soften {
 }
 
 #partners {
+	display: none;
 	font-size: 18px;
 	background: rgbn(245, 245, 245);
 }

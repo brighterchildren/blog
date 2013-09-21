@@ -16,7 +16,7 @@ body{
 	/*font-family:'Helvetica',sans-serif;*/
 	/*color: #333;*/
 	/*background: #5ABDDD;*/
-	background: url("img/blue-stripe.jpg") repeat scroll 0% 0% rgb(40, 40, 40);
+	background: url("img/black-stripe.gif") repeat scroll 0% 0% rgb(40, 40, 40);
 	padding: 5px;
 }
 
@@ -28,7 +28,7 @@ body{
 
 .container {
 	/*width: 940px;*/
-	background: #ffffff;
+	background: #f6f6f6;
 	border-radius: 5px;
 }
 
@@ -294,8 +294,9 @@ hr.soften {
 
 .banner {
     width: 500px;
-    height: 100px;
-    background: #EECC6A;
+    height: 70px;
+    padding: 10px;
+    background: #A1A0A1;
     margin-left: 50px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     /*border-top: 1px dashed #da5050;*/
@@ -320,7 +321,7 @@ hr.soften {
     left: 50px;
     width: 0;
     height: 0;
-    border-right: 70px solid #DDAF4D;
+    border-right: 70px solid #6D6D6D;
     border-top: 0px solid transparent;
     border-bottom: 20px solid transparent;
 }
@@ -332,7 +333,7 @@ hr.soften {
     right: 50px;
     width: 0;
     height: 0;
-    border-left: 70px solid #DDAF4D;
+    border-left: 70px solid #6D6D6D;
     border-top: 0px solid transparent;
     border-bottom: 20px solid transparent;
 }
@@ -340,7 +341,7 @@ hr.soften {
 .ribbon {
     width: 120px;
     height: 75px;
-    background: #EECC6A;
+    background: #A1A0A1;
     position: absolute;
     z-index: -2;
 }
@@ -357,7 +358,7 @@ hr.soften {
     top: 0;
     width: 0;
     height: 0;
-    border-right: 30px solid #EECC6A;
+    border-right: 30px solid #A1A0A1;
     border-top: 0 solid transparent;
     border-bottom: 37.5px solid transparent;
 }
@@ -369,7 +370,7 @@ hr.soften {
     bottom: 0;
     width: 0;
     height: 0;
-    border-right: 30px solid #EECC6A;
+    border-right: 30px solid #A1A0A1;
     border-top: 37.5px solid transparent;
     border-bottom: 0 solid transparent;
 }
@@ -386,7 +387,7 @@ hr.soften {
     top: 0;
     width: 0;
     height: 0;
-    border-left: 30px solid #EECC6A;
+    border-left: 30px solid #A1A0A1;
     border-top: 0 solid transparent;
     border-bottom: 37.5px solid transparent;
 }
@@ -398,7 +399,7 @@ hr.soften {
     bottom: 0;
     width: 0;
     height: 0;
-    border-left: 30px solid #EECC6A;
+    border-left: 30px solid #A1A0A1;
     border-top: 37.5px solid transparent;
     border-bottom: 0 solid transparent;
 }

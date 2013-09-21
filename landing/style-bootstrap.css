@@ -14,8 +14,7 @@
 body{
 	/*font-size:14px;*/
 	/*font-family:'Helvetica',sans-serif;*/
-	/*color: #333;*/
-	/*background: #5ABDDD;*/
+	color: #ffffff;
 	background: url("img/black-stripe.gif") repeat scroll 0% 0% rgb(40, 40, 40);
 	padding: 5px;
 }
@@ -28,7 +27,7 @@ body{
 
 .container {
 	/*width: 940px;*/
-	background: #f6f6f6;
+	background: #6D6D6D;
 	border-radius: 5px;
 }
 

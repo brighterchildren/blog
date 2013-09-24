@@ -128,6 +128,10 @@ hr.soften {
     height: 100%;
 }
 
+.cta-btns {
+	margin-bottom: 15px;
+}
+
 .cta-btn {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -143,8 +147,8 @@ hr.soften {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   *background-color: #f89406;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
-
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  margin-bottom: 20px;
 }
 
 .cta-btn:hover,
@@ -163,7 +167,7 @@ hr.soften {
 }
 
 #hero-video {
-	padding: 10px 0 10px 0;
+	padding: 0 0 10px 0;
 }
 
 #email-form {

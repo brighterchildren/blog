@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="jquery.ketchup.all.min.js" type="text/javascript"></script>
+</head>
+<body>
+		<div id="email">
+			<span>Enter your email to sign up</span>
+			<form action="subscribe.php" id="invite" method="POST">
+				<input type="text" placeholder="your@email.com" name="email" id="address" data-validate="validate(required, email)"/>
+				<button type="submit">&#187;</button>
+			</form>
+			<span id="result"></span>
+		</div>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#invite').ketchup().submit(function() {
+		if ($(this).ketchup('isValid')) {
+			var action = $(this).attr('action');
+			$.ajax({
+				url: action,
+				type: 'POST',
+				data: {
+					email: $('#address').attr('value')
+				},
+				success: function(data){
+					$('#result').html(data).css('color', 'green');
+				},
+				error: function() {
+					$('#result').html('Sorry, an error occurred.').css('color', 'red');
+				}
+			});
+		}
+		return false;
+	});
+});
+</script>
+</body>
+</html>

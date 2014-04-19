@@ -13,3 +13,47 @@
 .sponsor {
 	background: url('../img/blue-back.png') repeat scroll 0% 0% transparent;
 }
+
+.impact h3 {
+	color: #fff;
+}
+
+.impact .dollar {
+	font-size: 35px;
+}
+
+/* Colombia icon */
+.branch .branch-map-area i.us-icon {
+    left: 26%;
+    bottom: 37%;
+}
+
+/* Colombia text */
+.branch .branch-map-area span.us {
+    left: 29.5%;
+    bottom: 41%;
+}
+
+/* Kenya icon */
+.branch .branch-map-area i.africa-icon {
+    left: 56%;
+    bottom: 36%;
+}
+
+/* Kenya text */
+.branch .branch-map-area span.africa {
+    left: 59.5%;
+    bottom: 40%;
+}
+
+/* Philippines icon */
+.branch .branch-map-area i.ras-icon {
+    left: 78.9%;
+    bottom: 40.6%;
+}
+
+/* Philippines text */
+.branch .branch-map-area span.ras {
+    left: 82.5%;
+    bottom: 44.5%;
+}

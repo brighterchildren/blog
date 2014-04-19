@@ -1,0 +1,15 @@
+.header .navbar-default .navbar-brand span.logo {
+	line-height: 40px;
+}
+
+.hero .hero-heading h1 {
+	font-size: 30px;
+}
+
+.cta {
+	background: url('../img/hero-back.png') repeat scroll 0% 0% #FEFEFE;
+}
+
+.sponsor {
+	background: url('../img/blue-back.png') repeat scroll 0% 0% transparent;
+}

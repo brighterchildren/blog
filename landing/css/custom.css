@@ -1,10 +1,12 @@
+/* All sizes */
 .header .navbar-default .navbar-brand span.logo {
 	line-height: 40px;
 }
 
 .hero .hero-heading h1 {
-	font-size: 30px;
+    font-size: 30px;
 }
+
 
 .cta {
 	background: url('../img/hero-back.png') repeat scroll 0% 0% #FEFEFE;
@@ -56,4 +58,15 @@
 .branch .branch-map-area span.ras {
     left: 82.5%;
     bottom: 44.5%;
+}
+
+/* Tablets */
+@media (max-width: 767px){
+.header .navbar-default .navbar-brand span.logo {
+	font-size: 27px;
+}
+
+.hero .hero-heading h1 {
+    font-size: 20px;
+}
 }

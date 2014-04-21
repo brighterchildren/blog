@@ -3,20 +3,71 @@
 	display: none !important;
 }
 
+.banner-container {
+    background: url('../img/hero-classroom.jpg') no-repeat fixed center center #FFF;
+}
+
 .header .navbar-default .navbar-brand span.logo {
 	line-height: 40px;
+}
+
+/* Background captions */
+.caption {
+    /*font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;*/
+    letter-spacing: 0.01rem;
+    font-weight: 700;
+    font-style: normal;
+    border-top-left-radius: 4px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px 15px;
+    color: #FFF;
+    z-index: 300;
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.5);
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: right;
+    max-width: 80%;
+}
+
+.caption a {
+	color: #FFF;
+}
+
+.hero {
+    padding: 40px 0px 0px;
 }
 
 .hero .hero-heading h1 {
     font-size: 30px;
 }
 
+#carousel-children {
+	padding: 40px 0px;
+}
+
+#carousel-children img {
+	margin: auto;
+}
+
 .cta {
-	background: url('../img/hero-back.png') repeat scroll 0% 0% #FEFEFE;
+	background: none repeat scroll 0% 0% #14D187;
+	padding: 50px 0px;
+	border: none;
+}
+
+.cta input {
+	margin: 5px 0px;
 }
 
 .sponsor {
 	background: url('../img/blue-back.png') repeat scroll 0% 0% transparent;
+}
+
+/* Impact styles */
+.model-three {
+	background: url('../img/impact-back.jpg') repeat fixed 0% 0% transparent;
 }
 
 .impact h3 {

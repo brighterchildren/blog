@@ -38,7 +38,7 @@ $(document).ready(function(){
 	$('.parallax-cta').parallax("50%", 0.2);
 	$('.parallax-sponsor').parallax("50%", 0.05);
 	$('.parallax-model-two').parallax("50%", 0.3);
-	$('.parallax-model-three').parallax("50%", 0.3);
+	$('.parallax-model-three').parallax("50%", 0.6);
 	$('.parallax-video').parallax("50%", 0.3);
 	$('.parallax-model-five').parallax("50%", 0.2);
 });

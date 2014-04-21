@@ -118,6 +118,12 @@
     bottom: 44.5%;
 }
 
+/* Footer */
+.footer .organization {
+	text-align: center;
+	color: rgba(239, 229, 231, 0.77);
+}
+
 /* Tablets */
 @media (max-width: 767px){
 .header .navbar-default .navbar-brand span.logo {

@@ -66,7 +66,12 @@
 }
 
 .sponsor {
-	background: url('../img/blue-back.png') repeat scroll 0% 0% transparent;
+	background: url('../img/children-smiling-bg.jpg') repeat fixed 0% 0% transparent;
+	padding: 130px 0px 220px;
+}
+
+.sponsor h3 {
+	color: #fff;
 }
 
 /* Impact styles */

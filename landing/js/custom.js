@@ -36,7 +36,7 @@ $(document).ready(function(){
 	$('.parallax-testimonial').parallax("50%", 0.05);
 	$('.parallax-service').parallax("50%", 0.2);
 	$('.parallax-cta').parallax("50%", 0.2);
-	$('.parallax-sponsor').parallax("50%", 0.05);
+	$('.parallax-sponsor').parallax("50%", 0.2);
 	$('.parallax-model-two').parallax("50%", 0.3);
 	$('.parallax-model-three').parallax("50%", 0.6);
 	$('.parallax-video').parallax("50%", 0.3);

@@ -1,6 +1,18 @@
 /* All sizes */
-.style-switcher{
+.style-switcher {
 	display: none !important;
+}
+
+.nav-donate {
+	margin-right: -10px;
+	float: right !important;
+	margin: 0px;
+	padding: 16px 10px;
+    list-style: none outside none;
+}
+
+.container > .navbar-header {
+	float: left;
 }
 
 .banner-container {
@@ -29,17 +41,55 @@
     text-transform: uppercase;
     text-align: right;
     max-width: 80%;
+    display: none;
 }
 
 .caption a {
 	color: #FFF;
 }
 
-.hero {
-    padding: 66px 0px 86px;
+.heading h2 {
+	font-size: 28px !important;
+	text-transform: none !important
 }
 
-.hero .hero-heading h1 {
+.heading-small {
+	color: #fff;
+	font-size: 18px;
+}
+
+.heading h3 {
+	font-size: 22px;
+	margin-top: 9px;
+}
+
+.action {
+	width: 300px;
+	margin: auto;
+}
+
+.action a {
+	margin-bottom: 10px;
+}
+
+.btn-host {
+	width: 300px;
+	padding-top: 16px;
+}
+
+.host-large {
+	font-size: 24px;
+}
+
+.btn-attend {
+	font-size: 16px !important;
+}
+
+.mission {
+	padding: 10px 0px 0px;
+}
+
+.mission .mission-heading h1 {
     font-size: 27px;
 }
 
@@ -63,11 +113,17 @@
 
 .cta input {
 	margin: 5px 0px;
+	font-size: 18px;
+	padding: 5px;
+}
+
+.cta .cta-content a.btn {
+    margin: 22px auto 8px 2px;
 }
 
 .sponsor {
 	background: url('../img/children-smiling-bg.jpg') repeat fixed 0% 0% transparent;
-	padding: 130px 0px 220px;
+	padding: 30px 0px 75px;
 }
 
 .sponsor h3 {
@@ -75,8 +131,9 @@
 }
 
 /* Impact styles */
-.model-three {
+.impact {
 	background: url('../img/impact-back.jpg') repeat fixed 0% 0% transparent;
+	padding: 10px 0px 30px;
 }
 
 .impact h3 {
@@ -129,13 +186,48 @@
 	color: rgba(239, 229, 231, 0.77);
 }
 
+/* Style elements */
+.container .heading hr {
+    width: 150px;
+}
+
+
 /* Tablets */
 @media (max-width: 767px){
 .header .navbar-default .navbar-brand span.logo {
-	font-size: 27px;
+	font-size: 16px;
 }
 
-.hero .hero-heading h1 {
+.mission .mission-heading h1 {
     font-size: 20px;
 }
 }
+
+@media (min-width: 768px){
+.heading h2 {
+	font-size: 50px !important;
+}
+
+.heading h3 {
+	font-weight: bold;
+}
+
+.sponsor {
+	padding: 130px 0px 220px;
+}
+
+.mission {
+    padding: 66px 0px 86px;
+
+}
+
+.mission-heading h1 {
+	line-height: 36px;
+}
+
+.impact {
+	padding: 110px 0px 130px;
+
+}
+}
+

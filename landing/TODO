@@ -9,3 +9,22 @@ TODO
 * Link the children's buttons to sponsorship pages
 * Update the logo
 * Make the button colors (green, blue, orange) consistent
+
+Text sizes:
+<768
+
+Hero h2, span, h3		28px, 18px, 28px
+Hero button1, button2	24px, 13px
+Mission h1				20px
+Impact h2, h3			30px, 22px
+Sponsor h2, h3			
+Partners h2, h3
+
+>=768
+
+Hero h2, span, h3
+Hero button1, button2
+Mission h1
+Impact h2, h3
+Sponsor h2, h3
+Partners h2, h3

@@ -9,6 +9,7 @@ TODO
 * Link the children's buttons to sponsorship pages
 * Update the logo
 * Make the button colors (green, blue, orange) consistent
+* Speed up load time: https://developers.google.com/web/fundamentals/documentation/performance/index
 
 Text sizes:
 <768

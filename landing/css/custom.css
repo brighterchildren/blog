@@ -49,8 +49,16 @@
 }
 
 .heading h2 {
-	font-size: 28px !important;
-	text-transform: none !important
+	font-size: 32px !important;
+	text-transform: none !important;
+}
+
+.hero > .container {
+	margin-top: 20px;
+}
+
+.low-top {
+	margin-top: 6px !important;
 }
 
 .heading-small {
@@ -69,7 +77,7 @@
 }
 
 .action a {
-	margin-bottom: 10px;
+	margin: 10px 0;
 }
 
 .btn-host {

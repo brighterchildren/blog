@@ -1,5 +1,6 @@
 TODO
 * Mock up having an event page vs event section on landing page
+* Switch to Frying Pan image
 * Link the Donate button
 * Animate the Impact numbers each time you scroll
 * Hook up the email form
@@ -10,6 +11,11 @@ TODO
 * Make the button colors (green, blue, orange) consistent
 * Speed up load time: https://developers.google.com/web/fundamentals/documentation/performance/index
 * Add click event to down arrow nav
+* Add the video after the quotes from the kids
+* Add the names of the team to the page
+* Add Tadas and Amanda Cowen as advisors
+* Add a link to the thesis download
+* Add a FAQ page
 
 Text sizes:
 <768

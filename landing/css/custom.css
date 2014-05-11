@@ -148,8 +148,17 @@
     margin: 22px auto 8px 2px;
 }
 
-.sponsor {
+.hero {
 	background: url('../img/frying-pan.jpg') no-repeat center center fixed;
+	padding: 0px 0px 75px;
+}
+
+.hero h3 {
+	color: #fff;
+}
+
+.sponsor {
+	background: url('../img/children-smiling-bg.jpg') no-repeat center center fixed;
 	padding: 0px 0px 75px;
 }
 
@@ -242,6 +251,10 @@
 
 .heading-small {
 	font-size: 24px;
+}
+
+.hero {
+	padding: 130px 0px 220px;	
 }
 
 .sponsor {

@@ -3,11 +3,23 @@
 	display: none !important;
 }
 
+.header .navbar-default .navbar-brand span.logo {
+	width: 200px;
+	height: 90px;
+	background: url('../img/logo-200.png') no-repeat top left transparent;
+	border: none;
+	font-size: 0px;
+}
+
+.header .navbar-default .navbar-nav > li a {
+    line-height: 55px;
+}
+
 .nav-donate {
 	margin-right: -10px;
 	float: right !important;
 	margin: 0px;
-	padding: 16px 10px;
+	padding: 16px 9px;
     list-style: none outside none;
 }
 
@@ -150,7 +162,7 @@
 
 .hero {
 	background: url('../img/frying-pan.jpg') no-repeat center center fixed;
-	padding: 0px 0px 75px;
+	padding: 20px 0px 20px;
 }
 
 .hero h3 {
@@ -159,7 +171,7 @@
 }
 
 .hero .action {
-	padding-top: 20px;
+	/*padding-top: 20px;*/
 }
 
 .sponsor {
@@ -236,7 +248,7 @@
 /* Tablets */
 @media (max-width: 767px){
 .header .navbar-default .navbar-brand span.logo {
-	font-size: 16px;
+	/*font-size: 16px;*/
 }
 
 .mission .mission-heading h1 {
@@ -246,6 +258,10 @@
 }
 
 @media (min-width: 768px){
+.header .navbar-default .navbar-brand span.logo {
+	margin: 15px;
+}
+
 .heading h2 {
 	font-size: 50px !important;
 }

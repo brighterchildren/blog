@@ -53,6 +53,22 @@
 	line-height: 40px;
 }
 
+.container .heading.shadow h2, .container .heading.shadow h3 {
+    color: #4E76F5;
+}
+
+.heading.shadow {
+	margin-bottom: 0px;
+}
+
+.purpose h3 {
+	text-shadow: 1px 1px 0px #000;
+	margin: 9px 0 0 0;
+}
+
+.container .heading.shadow h3 {
+}
+
 /* Background captions */
 .caption {
     /*font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;*/
@@ -79,7 +95,7 @@
 }
 
 .heading h2 {
-	font-size: 32px !important;
+	font-size: 49px !important;
 	text-transform: none !important;
 }
 
@@ -122,6 +138,8 @@
 .btn-attend {
 	font-size: 16px !important;
 	line-height: 28px;
+	padding: 10px 40px;
+	margin-top: 10px;
 }
 
 .mission {
@@ -262,12 +280,16 @@
 	margin: 15px;
 }
 
+.container .heading.shadow h2, .container .heading.shadow h3 {
+	font-size: 34px;
+}
+
 .heading h2 {
-	font-size: 50px !important;
+	font-size: 80px !important;
 }
 
 .heading h3 {
-	font-weight: bold;
+	text-shadow: 1px 1px 0px #000;
 }
 
 .heading-small {
@@ -275,7 +297,17 @@
 }
 
 .hero {
-	padding: 130px 0px 220px;	
+	padding: 12px 0px 220px;	
+}
+
+.purpose h3 {
+	font-size: 36px;
+	margin: 0 auto;
+	max-width: 600px;
+}
+
+.btn-attend {
+	margin: 40px 0px;
 }
 
 .sponsor {

@@ -1,0 +1,335 @@
+/* All sizes */
+.style-switcher {
+	display: none !important;
+}
+
+.header .navbar-default .navbar-brand span.logo {
+	width: 200px;
+	height: 90px;
+	background: url('../img/logo-200.png') no-repeat top left transparent;
+	border: none;
+	font-size: 0px;
+}
+
+.header .navbar-default .navbar-nav > li a {
+    line-height: 55px;
+}
+
+.nav-donate {
+	margin-right: -10px;
+	float: right !important;
+	margin: 0px;
+	padding: 16px 9px;
+    list-style: none outside none;
+}
+
+.nav-down {
+	color: #fff;
+	font-size: 48px;
+}
+
+.container > .navbar-header {
+	float: left;
+}
+
+.header .navbar-default {
+	padding: 3px 0px;
+	box-shadow: none;
+}
+
+.navbar-brand {
+	padding: 6px 10px;
+}
+
+.header .navbar-default .navbar-nav > li a {
+	padding: 0px 20px;
+}
+
+.banner-container {
+    background: url('../img/hero-classroom.jpg') no-repeat fixed center center #FFF;
+}
+
+.header .navbar-default .navbar-brand span.logo {
+	line-height: 40px;
+}
+
+.container .heading.shadow h2, .container .heading.shadow h3 {
+    color: #4E76F5;
+}
+
+.heading.shadow {
+	margin-bottom: 0px;
+}
+
+.purpose h3 {
+	text-shadow: 1px 1px 0px #000;
+	margin: 9px 0 0 0;
+}
+
+.container .heading.shadow h3 {
+}
+
+/* Background captions */
+.caption {
+    /*font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;*/
+    letter-spacing: 0.01rem;
+    font-weight: 700;
+    font-style: normal;
+    border-top-left-radius: 4px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px 15px;
+    color: #FFF;
+    z-index: 300;
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.5);
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: right;
+    max-width: 80%;
+    display: none;
+}
+
+.caption a {
+	color: #FFF;
+}
+
+.heading h2 {
+	font-size: 49px !important;
+	text-transform: none !important;
+}
+
+.low-top {
+	margin-top: 6px !important;
+}
+
+.heading-small {
+	color: #fff;
+	font-size: 18px;
+}
+
+.heading h3 {
+	font-size: 22px;
+	margin-top: 9px;
+}
+
+.action {
+	width: 300px;
+	margin: auto;
+}
+
+.action a {
+	margin: 8px 0;
+}
+
+.btn-host {
+	width: 220px;
+	padding-top: 16px;
+}
+
+.host-large {
+	font-size: 24px;
+}
+
+.join-large {
+	font-size: 20px;
+}
+
+.btn-attend {
+	font-size: 16px !important;
+	line-height: 28px;
+	padding: 10px 40px;
+	margin-top: 10px;
+}
+
+.mission {
+	padding: 10px 0px 0px;
+}
+
+.mission .mission-heading h1 {
+    font-size: 27px;
+}
+
+#carousel-children {
+	padding: 0px 0px 40px 0;
+}
+
+#carousel-children img {
+	margin: auto;
+}
+
+.cta {
+	background: none repeat scroll 0% 0% #14D187;
+	padding: 50px 0px;
+	border: none;
+}
+
+.cta .cta-content {
+	background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.8);
+}
+
+.cta input {
+	margin: 5px 0px;
+	font-size: 18px;
+	padding: 5px;
+}
+
+.cta .cta-content a.btn {
+    margin: 22px auto 8px 2px;
+}
+
+.hero {
+	background: url('../img/frying-pan.jpg') no-repeat center center fixed;
+	padding: 20px 0px 20px;
+}
+
+.hero h3 {
+	color: #fff;
+	font-weight: bold;
+}
+
+.hero .action {
+	/*padding-top: 20px;*/
+}
+
+.sponsor {
+	background: url('../img/children-smiling-bg.jpg') no-repeat center center fixed;
+	padding: 0px 0px 75px;
+}
+
+.sponsor h3 {
+	color: #fff;
+}
+
+/* Impact styles */
+.impact {
+	background: url('../img/impact-back.jpg') repeat fixed 0% 0% transparent;
+	padding: 10px 0px 30px;
+}
+
+.impact h3 {
+	color: #fff;
+}
+
+.impact .dollar {
+	font-size: 35px;
+}
+
+/* Colombia icon */
+.branch .branch-map-area i.us-icon {
+    left: 26%;
+    bottom: 37%;
+}
+
+/* Colombia text */
+.branch .branch-map-area span.us {
+    left: 29.5%;
+    bottom: 41%;
+}
+
+/* Kenya icon */
+.branch .branch-map-area i.africa-icon {
+    left: 56%;
+    bottom: 36%;
+}
+
+/* Kenya text */
+.branch .branch-map-area span.africa {
+    left: 59.5%;
+    bottom: 40%;
+}
+
+/* Philippines icon */
+.branch .branch-map-area i.ras-icon {
+    left: 78.9%;
+    bottom: 40.6%;
+}
+
+/* Philippines text */
+.branch .branch-map-area span.ras {
+    left: 82.5%;
+    bottom: 44.5%;
+}
+
+/* Footer */
+.footer .organization {
+	text-align: center;
+	color: rgba(239, 229, 231, 0.77);
+}
+
+/* Style elements */
+.container .heading hr {
+    width: 150px;
+}
+
+
+/* Tablets */
+@media (max-width: 767px){
+.header .navbar-default .navbar-brand span.logo {
+	/*font-size: 16px;*/
+}
+
+.mission .mission-heading h1 {
+    font-size: 24px;
+    line-height: 28px;
+}
+}
+
+@media (min-width: 768px){
+.header .navbar-default .navbar-brand span.logo {
+	margin: 15px;
+}
+
+.header .navbar-default .navbar-nav > li a {
+	font-size: 18px;
+}
+
+.container .heading.shadow h2, .container .heading.shadow h3 {
+	font-size: 34px;
+}
+
+.heading h2 {
+	font-size: 80px !important;
+}
+
+.heading h3 {
+	text-shadow: 1px 1px 0px #000;
+}
+
+.heading-small {
+	font-size: 24px;
+}
+
+.hero {
+	padding: 12px 0px 220px;	
+}
+
+.purpose h3 {
+	font-size: 36px;
+	margin: 0 auto;
+	max-width: 600px;
+}
+
+.btn-attend {
+	margin: 40px 0px;
+}
+
+.sponsor {
+	padding: 130px 0px 220px;
+}
+
+.mission {
+    padding: 66px 0px 86px;
+
+}
+
+.mission-heading h1 {
+	line-height: 36px;
+}
+
+.impact {
+	padding: 110px 0px 130px;
+
+}
+}
+

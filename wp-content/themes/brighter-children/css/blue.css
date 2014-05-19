@@ -1,0 +1,204 @@
+/* COLOR CSS FILE */
+
+a{
+	color: #609cee;
+}
+
+a:hover{
+	color: #296bc6;
+}
+
+/* Header */
+.header .navbar-default{
+	border-top: 3px solid #296bc6;
+}
+
+.header .navbar-default .navbar-brand span.logo{
+	background: #609cee;
+}
+
+.header .navbar-default .navbar-brand .logo i{
+	color: #609cee;
+}
+
+.header .navbar-default .navbar-nav > li a:hover{
+	color: #609cee;
+}
+
+.header .navbar-default .navbar-nav > li a span{
+	color: #609cee;
+}
+
+.header .navbar-default  .navbar-nav > .dropdown .dropdown-menu {
+	background: #609cee;
+}
+
+.header .navbar-default  .navbar-nav > .dropdown .dropdown-menu:after {
+	border-bottom-color: #609cee;
+}
+
+.header .navbar-default  .navbar-nav > li.open ul li a{
+	background: #609cee;
+}
+
+.header .navbar-default  .navbar-nav > li.dropdown ul li a:hover{
+	background: #296bc6;
+}
+
+/* Banner */
+
+.slide-banner .carousel .car-control{
+	background: #609cee;
+}
+
+.slide-banner .bxslider-content .bx-viewport {
+	background: #609cee;
+}
+
+.slide-banner .flexslider .slides li .flex-two h3{
+	background: #609cee;
+}
+
+
+/* Hero */
+
+.hero .hero-logo{
+	background: #609cee;
+}
+
+/* Default Heading's Icon */
+.container .heading hr{
+	border-top:5px solid #609cee;
+}
+
+/* Feature Item */
+
+.feature .feature-item a:hover span.f-item-title{
+	color: #609cee;
+}
+
+/* Author */
+
+.author{
+	background: #609cee;
+}
+
+/* portfolio */
+
+.portfolio-item .p-img-container .pf-caption span.title{
+	background: #609cee;
+}
+
+/* Model */
+
+.model{
+	background: #609cee url('../img/blue-back2.png') repeat;
+}
+
+/* Service */
+
+.service .service-item .service-details{
+	background: #609cee;
+}
+
+.service .service-item .service-details:after{
+	border-bottom-color: #609cee;
+}
+
+/* Company */
+
+.company .company-content .company-content-item h6{
+	background: #609cee;
+}
+
+
+/* Product */
+
+.product .product-content ul > li.active > a{
+	background: #609cee;
+	color: #fff;
+}
+
+.product .product-content .tab-area li a:hover{
+	background: #609cee;
+	color: #fff;
+}
+
+.product .product-content .tab-area a .product-title i{
+	background: #609cee;
+}
+
+.product .product-content .tab-area  li > a:hover .product-title i{
+	background: #fff;
+	color: #296bc6;
+}
+
+.product .product-content ul > li.active > a:after {
+	border-left-color: #296bc6;
+}
+
+.product .product-content .tab-area  li.active > a .product-title i{
+	color: #296bc6;
+}
+
+/* Testimonial */
+
+
+.testimonial .carousel .c-control{
+	background: #609cee;
+}
+
+
+/* About Us */
+
+.about .about-skill .about-quote span.quote{
+	color: #609cee;
+}
+
+/* CTA */
+
+/* Pricing */
+
+/* Contact */
+
+.contact .contact-container .contact-widget i.c-icon{
+	color: #609cee;
+}
+
+.contact .contact-item{
+	background: #609cee;
+}
+
+
+/* Blog */
+
+.blog .blog-content .blog-post .blog-post-img span.date{
+	background: #609cee;
+}
+
+/* MOdel Two */
+
+.model-two .m-two-icon{
+	background: #609cee;
+}
+
+/***/
+
+.inner-page-banner.shadow h3{
+	background: #609cee;
+}
+
+.grid  .grid-entry .entry-info .share span a i{
+	color: #609cee;
+}
+
+.grid  .grid-entry .entry-info .share span a:hover i{
+	color: #296bc6;
+}
+
+/***/
+
+/* Back to top */
+.scroll-to-top {
+	background: #609cee; 
+}

@@ -1,0 +1,197 @@
+/* COLOR CSS FILE */
+a{
+	color: #14d187;
+}
+
+a:hover{
+	color: #07b873;
+}
+
+/* Header */
+.header .navbar-default{
+	border-top: 3px solid #11b575;
+}
+
+.header .navbar-default .navbar-brand span.logo{
+	background: #14d187;
+}
+
+.header .navbar-default .navbar-brand .logo i{
+	color: #14d187;
+}
+
+.header .navbar-default .navbar-nav > li a:hover{
+	color: #07b873;
+}
+
+.header .navbar-default .navbar-nav > li a span{
+	color: #14d187;
+}
+
+.header .navbar-default  .navbar-nav > .dropdown .dropdown-menu {
+	background: #07b873;
+}
+
+.header .navbar-default  .navbar-nav > .dropdown .dropdown-menu:after {
+	border-bottom-color: #07b873;
+}
+
+.header .navbar-default  .navbar-nav > li.open ul li a{
+	background: #07b873;
+}
+
+.header .navbar-default  .navbar-nav > li.dropdown ul li a:hover{
+	background: #02935b;
+}
+
+/* Banner */
+
+.slide-banner .carousel .car-control{
+	background: #14d187;
+}
+
+.slide-banner .bxslider-content .bx-viewport  {
+	background: #14d187;
+}
+
+.slide-banner .flexslider .slides li .flex-two h3{
+	background: #14d187;
+}
+
+/* Hero */
+
+.hero .hero-logo{
+	background: #14d187;
+}
+
+/* Default Heading's Icon */
+.container .heading hr{
+	border-top:5px solid #07b873;
+}
+
+/* Feature Item */
+
+.feature .feature-item a:hover span.f-item-title{
+	color: #07b873;
+}
+
+/* portfolio */
+
+.portfolio-item .p-img-container .pf-caption span.title{
+	background: #07b873;
+}
+
+/* Model */
+
+.model{
+	background: #07b873 url('../img/green-back2.png') repeat;
+}
+
+
+/* Service */
+
+.service .service-item .service-details{
+	background: #07b873;
+}
+
+.service .service-item .service-details:after{
+	border-bottom-color: #07b873;
+}
+
+/* Company */
+
+.company .company-content .company-content-item h6{
+	background: #07b873;
+}
+
+
+/* Product */
+
+.product .product-content ul > li.active > a{
+	background: #07b873;
+	color: #fff;
+}
+
+.product .product-content .tab-area li a:hover{
+	background: #07b873;
+	color: #fff;
+}
+
+.product .product-content .tab-area a .product-title i{
+	background: #07b873;
+}
+
+.product .product-content .tab-area  li > a:hover .product-title i{
+	background: #fff;
+	color: #05a969;
+}
+
+.product .product-content ul > li.active > a:after {
+	border-left-color: #05a969;
+}
+
+.product .product-content .tab-area  li.active > a .product-title i{
+	color: #05a969;
+}
+
+/* Testimonial */
+
+
+.testimonial .carousel .c-control{
+	background: #07b873;
+}
+
+/* Author */
+
+.author{
+	background: #07b873;
+}
+
+/* About Us */
+
+.about .about-skill .about-quote span.quote{
+	color: #07b873;
+}
+
+/* Contact */
+
+.contact .contact-container .contact-widget i.c-icon{
+	color: #07b873;
+}
+
+.contact .contact-item{
+	background: #07b873;
+}
+
+
+/* Blog */
+
+.blog .blog-content .blog-post .blog-post-img span.date{
+	background: #07b873;
+}
+
+/* MOdel Two */
+
+.model-two .m-two-icon{
+	background: #07b873;
+}
+
+/***/
+
+.inner-page-banner.shadow h3{
+	background: #07b873;
+}
+
+.grid  .grid-entry .entry-info .share span a i{
+	color: #14d187;
+}
+
+.grid  .grid-entry .entry-info .share span a:hover i{
+	color: #07b873;
+}
+/***/
+
+/* Back to top */
+.scroll-to-top {
+	background: #07b873; 
+}

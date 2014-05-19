@@ -1,0 +1,200 @@
+/* COLOR CSS FILE */
+
+a{
+	color: #8c1efb;
+}
+
+a:hover{
+	color: #5803ae;
+}
+
+/* Header */
+.header .navbar-default{
+	border-top: 3px solid #5803ae;
+}
+
+.header .navbar-default .navbar-brand span.logo{
+	background: #8c1efb;
+}
+
+.header .navbar-default .navbar-brand .logo i{
+	color: #8c1efb;
+}
+
+.header .navbar-default .navbar-nav > li a:hover{
+	color: #8c1efb;
+}
+
+.header .navbar-default .navbar-nav > li a span{
+	color: #8c1efb;
+}
+
+.header .navbar-default  .navbar-nav > .dropdown .dropdown-menu {
+	background: #8c1efb;
+}
+
+.header .navbar-default  .navbar-nav > .dropdown .dropdown-menu:after {
+	border-bottom-color: #8c1efb;
+}
+
+.header .navbar-default  .navbar-nav > li.open ul li a{
+	background: #8c1efb;
+}
+
+.header .navbar-default  .navbar-nav > li.dropdown ul li a:hover{
+	background: #5803ae;
+}
+
+/* Banner */
+
+.slide-banner .carousel .car-control{
+	background: #8c1efb;
+}
+
+.slide-banner .bxslider-content .bx-viewport {
+	background: #8c1efb;
+}
+
+.slide-banner .flexslider .slides li .flex-two h3{
+	background: #8c1efb;
+}
+
+/* Hero */
+
+.hero .hero-logo{
+	background: #8c1efb;
+}
+
+/* Default Heading's Icon */
+.container .heading hr{
+	border-top:5px solid #8c1efb;
+}
+
+/* Feature Item */
+
+.feature .feature-item a:hover span.f-item-title{
+	color: #8c1efb;
+}
+
+/* Author */
+
+.author{
+	background: #8c1efb;
+}
+
+/* portfolio */
+
+.portfolio-item .p-img-container .pf-caption span.title{
+	background: #8c1efb;
+}
+
+/* Model */
+
+.model{
+	background: #8c1efb url('../img/violet-back2.png') repeat;
+}
+
+/* Service */
+
+.service .service-item .service-details{
+	background: #8c1efb;
+}
+
+.service .service-item .service-details:after{
+	border-bottom-color: #8c1efb;
+}
+
+/* Company */
+
+.company .company-content .company-content-item h6{
+	background: #8c1efb;
+}
+
+
+/* Product */
+
+.product .product-content ul > li.active > a{
+	background: #8c1efb;
+	color: #fff;
+}
+
+.product .product-content .tab-area li a:hover{
+	background: #8c1efb;
+	color: #fff;
+}
+
+.product .product-content .tab-area a .product-title i{
+	background: #8c1efb;
+}
+
+.product .product-content .tab-area  li > a:hover .product-title i{
+	background: #fff;
+	color: #5803ae;
+}
+
+.product .product-content ul > li.active > a:after {
+	border-left-color: #5803ae;
+}
+
+.product .product-content .tab-area  li.active > a .product-title i{
+	color: #5803ae;
+}
+
+/* Testimonial */
+
+
+.testimonial .carousel .c-control{
+	background: #8c1efb;
+}
+
+
+/* About Us */
+
+.about .about-skill .about-quote span.quote{
+	color: #8c1efb;
+}
+
+
+/* Contact */
+
+.contact .contact-container .contact-widget i.c-icon{
+	color: #8c1efb;
+}
+
+.contact .contact-item{
+	background: #8c1efb;
+}
+
+
+/* Blog */
+
+.blog .blog-content .blog-post .blog-post-img span.date{
+	background: #8c1efb;
+}
+
+/* MOdel Two */
+
+.model-two .m-two-icon{
+	background: #8c1efb;
+}
+
+/***/
+
+.inner-page-banner.shadow h3{
+	background: #8c1efb;
+}
+
+.grid  .grid-entry .entry-info .share span a i{
+	color: #8c1efb;
+}
+
+.grid  .grid-entry .entry-info .share span a:hover i{
+	color: #5803ae;
+}
+
+/***/
+
+/* Back to top */
+.scroll-to-top {
+	background: #8c1efb; 
+}

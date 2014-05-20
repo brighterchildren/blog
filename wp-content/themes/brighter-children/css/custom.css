@@ -252,8 +252,17 @@
 }
 
 /* Footer */
-.footer .organization {
+.footer {
 	text-align: center;
+	color: rgba(239, 229, 231, 0.77);
+}
+
+.footer .nav {
+	margin: 8px 0;
+}
+
+.footer .nav a {
+	margin: 0 5px;
 	color: rgba(239, 229, 231, 0.77);
 }
 

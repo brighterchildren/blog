@@ -18,24 +18,24 @@
 
 <!-- Styles -->
 <!-- Bootstrap CSS -->
-<link href="wp-content/themes/brighter-children/css/bootstrap.min.css" rel="stylesheet">
+<link href="<?php echo CSSDIR ?>/bootstrap.min.css" rel="stylesheet">
 <!-- Animate CSS -->
-<link href="wp-content/themes/brighter-children/css/animate.min.css" rel="stylesheet">
+<link href="<?php echo CSSDIR ?>/animate.min.css" rel="stylesheet">
 <!-- Slider Revolution CSS -->
-<link href="wp-content/themes/brighter-children/css/settings.css" rel="stylesheet">
+<link href="<?php echo CSSDIR ?>/settings.css" rel="stylesheet">
 <!--[if IE ]>
-<link rel="stylesheet" href="wp-content/themes/brighter-children/css/settings-ie8.css">
+<link rel="stylesheet" href="<?php echo CSSDIR ?>/settings-ie8.css">
 <![endif]-->
 <!-- Portfolio CSS -->
-<link href="wp-content/themes/brighter-children/css/prettyPhoto.css" rel="stylesheet">
+<link href="<?php echo CSSDIR ?>/prettyPhoto.css" rel="stylesheet">
 <!-- Font awesome CSS -->
-<link href="wp-content/themes/brighter-children/css/font-awesome.min.css" rel="stylesheet">		
+<link href="<?php echo CSSDIR ?>/font-awesome.min.css" rel="stylesheet">		
 <!-- Custom CSS -->
-<link href="wp-content/themes/brighter-children/css/style.css" rel="stylesheet">
+<link href="<?php echo CSSDIR ?>/style.css" rel="stylesheet">
 <!-- Color Style sheet - purple, blue, light blue, red or green-->
-<link type="text/css" rel="stylesheet" id="theme" href="wp-content/themes/brighter-children/css/green.css" />
+<link type="text/css" rel="stylesheet" id="theme" href="<?php echo CSSDIR ?>/green.css" />
 <!-- Custom Style sheet-->
-<link href="wp-content/themes/brighter-children/css/custom.css" rel="stylesheet">
+<link href="<?php echo CSSDIR ?>/custom.css" rel="stylesheet">
 <!-- Favicon -->
 <link rel="shortcut icon" href="#">
 

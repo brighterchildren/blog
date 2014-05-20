@@ -45,36 +45,36 @@
 		
 		<!-- Javascript files -->
 		<!-- jQuery -->
-		<script src="wp-content/themes/brighter-children/js/jquery.js"></script>
+		<script src="<?php echo SCRIPTDIR ?>/jquery.js"></script>
 		<!-- Bootstrap JS -->
-		<script src="wp-content/themes/brighter-children/js/bootstrap.min.js"></script>
+		<script src="<?php echo SCRIPTDIR ?>/bootstrap.min.js"></script>
 		<!-- jQuery prettyPhoto -->
-		<script src="wp-content/themes/brighter-children/js/jquery.prettyPhoto.js"></script>
+		<script src="<?php echo SCRIPTDIR ?>/jquery.prettyPhoto.js"></script>
 		<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
-		<script type="text/javascript" src="wp-content/themes/brighter-children/js/jquery.themepunch.plugins.min.js"></script>
-		<script type="text/javascript" src="wp-content/themes/brighter-children/js/jquery.themepunch.revolution.min.js"></script>
+		<script type="text/javascript" src="<?php echo SCRIPTDIR ?>/jquery.themepunch.plugins.min.js"></script>
+		<script type="text/javascript" src="<?php echo SCRIPTDIR ?>/jquery.themepunch.revolution.min.js"></script>
 		<!-- jQuery flot -->
-		<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="wp-content/themes/brighter-children/js/excanvas.min.js"></script><![endif]-->
-		<script src="wp-content/themes/brighter-children/js/jquery.flot.min.js"></script>     
-		<script src="wp-content/themes/brighter-children/js/jquery.flot.resize.min.js"></script>
+		<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="<?php echo SCRIPTDIR ?>/excanvas.min.js"></script><![endif]-->
+		<script src="<?php echo SCRIPTDIR ?>/jquery.flot.min.js"></script>     
+		<script src="<?php echo SCRIPTDIR ?>/jquery.flot.resize.min.js"></script>
 		<!-- Style Switcher JS -->
-		<script type="text/javascript" src="wp-content/themes/brighter-children/js/jquery.style-switcher.js"></script>
+		<script type="text/javascript" src="<?php echo SCRIPTDIR ?>/jquery.style-switcher.js"></script>
 		<!-- Parallax JS -->
-		<script src="wp-content/themes/brighter-children/js/jquery.parallax-1.1.3.js"></script>
+		<script src="<?php echo SCRIPTDIR ?>/jquery.parallax-1.1.3.js"></script>
 		<!-- Arbitrary Anchor JS -->
-		<script type="text/javascript" src="wp-content/themes/brighter-children/js/jquery.arbitrary-anchor.js"></script>
+		<script type="text/javascript" src="<?php echo SCRIPTDIR ?>/jquery.arbitrary-anchor.js"></script>
 		<!-- Count To JS  -->
-		<script src="wp-content/themes/brighter-children/js/jquery.countTo.js"></script>
+		<script src="<?php echo SCRIPTDIR ?>/jquery.countTo.js"></script>
 		<!-- WayPoints JS -->
-		<script src="wp-content/themes/brighter-children/js/waypoints.min.js"></script>
+		<script src="<?php echo SCRIPTDIR ?>/waypoints.min.js"></script>
 		<!-- GMap JS -->
 		<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
-		<script type="text/javascript" src="wp-content/themes/brighter-children/js/jquery.ui.map.min.js"></script>
-		<script type="text/javascript" src="wp-content/themes/brighter-children/js/jquery.ui.map.overlays.min.js"></script> 
+		<script type="text/javascript" src="<?php echo SCRIPTDIR ?>/jquery.ui.map.min.js"></script>
+		<script type="text/javascript" src="<?php echo SCRIPTDIR ?>/jquery.ui.map.overlays.min.js"></script> 
 		<!-- Respond JS for IE8 -->
-		<script src="wp-content/themes/brighter-children/js/respond.min.js"></script>
+		<script src="<?php echo SCRIPTDIR ?>/respond.min.js"></script>
 		<!-- HTML5 Support for IE -->
-		<script src="wp-content/themes/brighter-children/js/html5shiv.js"></script>
+		<script src="<?php echo SCRIPTDIR ?>/html5shiv.js"></script>
 		<!-- This Page Java Script -->
 		<script type="text/javascript">
 		

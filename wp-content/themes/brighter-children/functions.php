@@ -124,3 +124,11 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+/**
+ * Store the theme and script directories in variables
+ */
+define( 'THMDIR', get_bloginfo('template_url'));
+define( 'CSSDIR', get_bloginfo('template_url') ."/css");
+define( 'SCRIPTDIR', get_bloginfo('template_url') ."/js");

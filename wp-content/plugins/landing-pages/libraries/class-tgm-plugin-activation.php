@@ -10,7 +10,7 @@
  * @license   http://opensource.org/licenses/gpl-2.0.php GPL v2 or later
  * @link      https://github.com/thomasgriffin/TGM-Plugin-Activation
  */
- // update_user_meta( 1, 'tgmpa_dismissed_notice', 0 ); // turn off notice. userid, function, val
+
 /*
     Copyright 2012  Thomas Griffin  (email : thomas@thomasgriffinmedia.com)
 
@@ -165,14 +165,13 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 				'menu_title'                      => __( 'Install Plugins', $this->domain ),
 				'installing'                      => __( 'Installing Plugin: %s', $this->domain ),
 				'oops'                            => __( 'Something went wrong.', $this->domain ),
-				'notice_can_install_required'     => _n_noop( 'This theme requires the following plugin: %1$s', 'This theme requires the following plugins: %1$s' ),
-				'notice_can_install_recommended'  => _n_noop( 'This theme recommends the following plugin: %1$s', 'This theme recommends the following plugins: %1$s' ),
+				'notice_can_install_required'     => _n_noop( 'This theme requires the following plugin: %1$s.', 'This theme requires the following plugins: %1$s.' ),
+				'notice_can_install_recommended'  => _n_noop( 'This theme recommends the following plugin: %1$s.', 'This theme recommends the following plugins: %1$s.' ),
 				'notice_cannot_install'           => _n_noop( 'Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.' ),
-				'notice_can_activate_required'    => _n_noop( 'The following required plugin is currently inactive: %1$s', 'The following required plugins are currently inactive: %1$s' ),
-				'notice_can_activate_recommended' => _n_noop( 'The following recommended plugin is currently inactive: %1$s', 'The following recommended plugins are currently inactive: %1$s' ),
-				'reason_why' => _n_noop( '%1$s', '%1$s' ),
+				'notice_can_activate_required'    => _n_noop( 'The following required plugin is currently inactive: %1$s.', 'The following required plugins are currently inactive: %1$s.' ),
+				'notice_can_activate_recommended' => _n_noop( 'The following recommended plugin is currently inactive: %1$s.', 'The following recommended plugins are currently inactive: %1$s.' ),
 				'notice_cannot_activate'          => _n_noop( 'Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated.', 'Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated.' ),
-				'notice_ask_to_update'            => _n_noop( 'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s' ),
+				'notice_ask_to_update'            => _n_noop( 'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.' ),
 				'notice_cannot_update'            => _n_noop( 'Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.' ),
 				'install_link' 					  => _n_noop( 'Begin installing plugin', 'Begin installing plugins' ),
 				'activate_link' 				  => _n_noop( 'Activate installed plugin', 'Activate installed plugins' ),
@@ -449,10 +448,10 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 				/** Set plugin source to WordPress API link if available */
 				if ( isset( $plugin['source'] ) && 'repo' == $plugin['source'] ) {
 					$api = plugins_api( 'plugin_information', array( 'slug' => $plugin['slug'], 'fields' => array( 'sections' => false ) ) );
-					
+
 					if ( is_wp_error( $api ) )
 						wp_die( $this->strings['oops'] . var_dump( $api ) );
-						
+
 					if ( isset( $api->download_link ) )
 						$plugin['source'] = $api->download_link;
 				}
@@ -613,12 +612,10 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 					$install_link_count++; // Increment the install link count
 					if ( current_user_can( 'install_plugins' ) ) {
 						if ( $plugin['required'] )
-							$message['notice_can_install_required'][] = $plugin['name'] . $plugin['description'];
-							
+							$message['notice_can_install_required'][] = $plugin['name'];
 						/** This plugin is only recommended */
 						else
-							$message['notice_can_install_recommended'][] = $plugin['name'] . $plugin['description'];
-							
+							$message['notice_can_install_recommended'][] = $plugin['name'];
 					}
 					/** Need higher privileges to install the plugin */
 					else {
@@ -631,11 +628,10 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 					$activate_link_count++; // Increment the activate link count
 					if ( current_user_can( 'activate_plugins' ) ) {
 						if ( ( isset( $plugin['required'] ) ) && ( $plugin['required'] ) )
-							$message['notice_can_activate_required'][] = $plugin['name'] . $plugin['description'];
+							$message['notice_can_activate_required'][] = $plugin['name'];
 						/** This plugin is only recommended */
 						else {
-							$message['notice_can_activate_recommended'][] = $plugin['name'] . $plugin['description'];
-
+							$message['notice_can_activate_recommended'][] = $plugin['name'];
 						}
 					}
 					/** Need higher privileges to activate the plugin */
@@ -682,7 +678,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 								$linked_plugin_groups[] = '<a href="' . esc_url( $url ) . '" class="thickbox" title="' . $plugin_group_single_name . '">' . $plugin_group_single_name . '</a>';
 							}
 							else {
-								$linked_plugin_groups[] = $plugin_group_single_name . "test"; // No hyperlink
+								$linked_plugin_groups[] = $plugin_group_single_name; // No hyperlink
 							}
 
 							if ( isset( $linked_plugin_groups ) && (array) $linked_plugin_groups )
@@ -690,14 +686,14 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 						}
 
 						$last_plugin = array_pop( $plugin_groups ); // Pop off last name to prep for readability
-						$imploded    = empty( $plugin_groups ) ? '<em>' . $last_plugin . '</em>' : '<em>' . ( implode( ', ', $plugin_groups ) . '</em> and <em>' . $last_plugin . '</em>' );
+						$imploded    = empty( $plugin_groups ) ? '<em>' . $last_plugin . '</em>' : '<em>' . ( implode( ', ', $plugin_groups ) . '</em><em>' . $last_plugin . '</em>' );
 
 						$rendered .= '<p>' . sprintf( translate_nooped_plural( $this->strings[$type], $count, $this->domain ), $imploded, $count ) . '</p>'; // All messages now stored
 					}
 
 					/** Setup variables to determine if action links are needed */
 					$show_install_link  = $install_link ? '<a href="' . add_query_arg( 'page', $this->menu, admin_url( $this->parent_url_slug ) ) . '">' . translate_nooped_plural( $this->strings['install_link'], $install_link_count, $this->domain ) . '</a>' : '';
-					$show_activate_link = $activate_link ? '<a href="' . admin_url( 'plugins.php' ) . '">' . translate_nooped_plural( $this->strings['activate_link'], $activate_link_count, $this->domain ) . '</a>'  : '';
+					$show_activate_link = $activate_link ? '<a href="' . admin_url( 'themes.php?page=install-inbound-plugins' ) . '">' . translate_nooped_plural( $this->strings['activate_link'], $activate_link_count, $this->domain ) . '</a>'  : '';
 
 					/** Define all of the action links */
 					$action_links = apply_filters(
@@ -917,7 +913,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 
 			/** Set file_path parameter for any installed plugins */
 			$this->populate_file_path();
-			
+
 			$installed_plugins = get_plugins();
 
 			foreach ( $this->plugins as $plugin ) {
@@ -1119,24 +1115,24 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 				$i++;
 			}
-			
+
 			/** Sort plugins by Required/Recommended type and by alphabetical listing within each type */
 			$resort = array();
 			$req = array();
 			$rec = array();
-			
+
 			/** Grab all the plugin types */
 			foreach ( $table_data as $plugin )
 				$resort[] = $plugin['type'];
-			
+
 			/** Sort each plugin by type */
 			foreach ( $resort as $type )
 				if ( 'Required' == $type )
 					$req[] = $type;
 				else
 					$rec[] = $type;
-			
-			/** Sort alphabetically each plugin type array, merge them and then sort in reverse	(lists Required plugins first) */	
+
+			/** Sort alphabetically each plugin type array, merge them and then sort in reverse	(lists Required plugins first) */
 			sort( $req );
 			sort( $rec );
 			array_merge( $resort, $req, $rec );
@@ -1978,7 +1974,7 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET[sanitize_key( 'page' )] )
 	 		 *
 	 		 * @since 2.2.0
 	 		 */
-			public function before() {
+			public function before( $title = '' ) {
 
 				/** We are currently in the plugin installation loop, so set to true */
 				$this->in_loop = true;
@@ -2000,7 +1996,7 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET[sanitize_key( 'page' )] )
 	 		 *
 	 		 * @since 2.2.0
 	 		 */
-			public function after() {
+			public function after( $title = '') {
 
 				/** Close install strings */
 				echo '</p></div>';

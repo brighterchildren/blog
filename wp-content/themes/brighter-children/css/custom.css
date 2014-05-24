@@ -54,7 +54,11 @@
 }
 
 .container .heading.shadow h2, .container .heading.shadow h3 {
-    color: #4E76F5;
+    color: #fff;
+}
+
+.hero .container .heading.shadow h2, .hero .container .heading.shadow h3 {
+	color: #4E76F5;
 }
 
 .heading.shadow {

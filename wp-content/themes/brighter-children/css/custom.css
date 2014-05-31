@@ -330,6 +330,10 @@
 .number { font-size: 2.65em; margin-right: 3px; vertical-align: -6px; }
 .stats-more { margin-left: 20px; clear: left; margin-bottom: 20px; }
 
+/* Team page */
+.post-8 {
+	text-align: center;
+}
 
 /* Tablets */
 @media (max-width: 767px){

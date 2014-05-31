@@ -59,7 +59,7 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="nav-donate" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="https://www.paypal.com">Donate</a></li>
+						<li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=J3JNX5R96KSHA&lc=US&item_name=Brighter%20Children&no_note=0&cn=Add%20special%20instructions%20to%20the%20seller%3a&no_shipping=1&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted">Donate</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div>

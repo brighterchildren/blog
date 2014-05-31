@@ -22,9 +22,9 @@
 					</div>
 					<!-- Nav -->
 					<div class="nav">
-						<a href="about">about</a>
-						<a href="about/team">team</a>
-						<a href="faq">faq</a>
+						<a href="/about">about</a>
+						<a href="/about/team">team</a>
+						<a href="/faq">faq</a>
 					</div>
 					<div class="organization">
 						Brighter Children is a non-profit organization

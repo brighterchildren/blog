@@ -19,6 +19,7 @@
 						<a href="https://www.facebook.com/BrighterChildren" class="facebook"><i class="fa fa-facebook"></i></a>
 						<a href="https://twitter.com/BrighterC" class="twitter"><i class="fa fa-twitter"></i></a>
 						<a href="https://www.linkedin.com/company/3075011" class="linkedin"><i class="fa fa-linkedin"></i></a>
+						<a href="https://plus.google.com/u/0/117076274557156318841" class="google-plus"><i class="fa fa-google-plus"></i></a>
 					</div>
 					<!-- Nav -->
 					<div class="nav">

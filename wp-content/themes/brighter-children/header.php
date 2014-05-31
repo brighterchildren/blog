@@ -37,8 +37,7 @@
 <!-- Custom Style sheet-->
 <link href="<?php echo CSSDIR ?>/custom.css" rel="stylesheet">
 <!-- Favicon -->
-<link rel="shortcut icon" href="#">
-
+<link rel="shortcut icon" type="image/x-icon" href="<?php echo THMDIR ?>/favicon.ico">
 </head>
 
 <body>

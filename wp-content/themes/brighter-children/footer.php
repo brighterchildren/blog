@@ -140,6 +140,15 @@
 
 		</script>
 
+		<!-- ClickTale Bottom part -->
+		<script type='text/javascript'>		 
+		document.write(unescape("%3Cscript%20src='"+
+		(document.location.protocol=='https:'?
+		"https://cdnssl.clicktale.net/www07/ptc/2730d22c-2a71-44e4-a418-abcd8441df46.js":
+		"http://cdn.clicktale.net/www07/ptc/2730d22c-2a71-44e4-a418-abcd8441df46.js")+"'%20type='text/javascript'%3E%3C/script%3E"));
+		</script> 
+		<!-- ClickTale end of Bottom part -->
+
 		<!-- Custom JS -->
 		<script src="wp-content/themes/brighter-children/js/custom.js"></script>
 		

@@ -1,19 +1,12 @@
 TODO
-* Change headers from blue to white
-* Remove ‘Support’ buttons
-* Link the Donate button
 * Animate the Impact numbers each time you scroll
 * Hook up the email form
 * Fix the caption positioning
-* Migrate the page into a WordPress template
 * Link the children's buttons to sponsorship pages
 * Make the button colors (green, blue, orange) consistent
 * Speed up load time: https://developers.google.com/web/fundamentals/documentation/performance/index
 * Add click event to down arrow nav
 * Add the video after the quotes from the kids
-* Add the names of the team to the page
-* Add Tadas and Amanda Cowen as advisors
-* Add a link to the thesis download
 
 Text sizes:
 <768
@@ -33,3 +26,6 @@ Mission h1
 Impact h2, h3
 Sponsor h2, h3
 Partners h2, h3
+
+Old Staff page content
+[staff paging="false" count="6" parent=""]

@@ -64,7 +64,6 @@ get_header(); ?>
 									<blockquote>
 										<p>Even though I live far I am never late to school because I want to learn.  When I grow up I want to be an engineer.</p>
 									</blockquote>
-									<a href="#" class="btn btn-danger btn-lg">Support Ishrat</a>
 								</div>
 							</div>
 							<div class="col-md-2 col-sm-2">
@@ -79,7 +78,6 @@ get_header(); ?>
 									<blockquote>
 										<p>I have always been known as an obedient and good student. I like to sing and when I grow up I want to become a teacher.</p>
 									</blockquote>
-									<a href="#" class="btn btn-danger btn-lg">Support Tayyabba</a>
 								</div>
 								<a id="learn-more" href="#"></a>
 							</div>

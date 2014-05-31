@@ -1,4 +1,8 @@
 TODO
+* Update index.php file to show blog posts
+* Move homepage HTML to a different WordPress template
+* Update styles for blog posts
+* Explore making the header logo smaller and adding hamburger menu at the top
 * Animate the Impact numbers each time you scroll
 * Hook up the email form
 * Fix the caption positioning

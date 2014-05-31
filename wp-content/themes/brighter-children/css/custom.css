@@ -23,6 +23,14 @@
     list-style: none outside none;
 }
 
+.header .navbar-default .navbar-nav > li a {
+	background: #FFF4B2;
+}
+
+.header .navbar-default .navbar-nav > li a:hover {
+    color: #4C82F2;
+}
+
 .nav-down {
 	color: #fff;
 	font-size: 48px;

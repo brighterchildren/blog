@@ -24,7 +24,7 @@ get_header(); ?>
 			<h2>Come join us at <br />The Frying Pan</h2>
 			<h3>for the summer's best day party</h3>
 			<h3>Sat, June 28 1:00-4:30pm</h3>
-			<a href="#" class="btn btn-danger btn-lg btn-attend"><div class="join-large"></div>Buy a ticket</a>
+			<a href="http://www.eventbrite.com/e/the-summers-best-day-party-at-frying-pan-tickets-11811734215?aff=ws" class="btn btn-danger btn-lg btn-attend"><div class="join-large"></div>Buy a ticket</a>
 		</div>
 		<div class="purpose">
 			<h3>Raise money for the education of children by having a good time with friends </h3>

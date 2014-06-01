@@ -21,10 +21,11 @@ get_header(); ?>
 	</div>
 	<div class="container">
 		<div class="heading shadow">
-			<h2>Come join us at <br />The Frying Pan</h2>
+			<h2>Come join us at <br />Frying Pan</h2>
 			<h3>for the summer's best day party</h3>
 			<h3>Sat, June 28 1:00-4:30pm</h3>
 			<a href="http://www.eventbrite.com/e/the-summers-best-day-party-at-frying-pan-tickets-11811734215?aff=ws" class="btn btn-danger btn-lg btn-attend"><div class="join-large"></div>Buy a ticket</a>
+			<span class="cantjoin">Can't join? <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=J3JNX5R96KSHA&lc=US&item_name=Brighter%20Children&no_note=0&cn=Add%20special%20instructions%20to%20the%20seller%3a&no_shipping=1&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted">Donate</a></span>
 		</div>
 		<div class="purpose">
 			<h3>Raise money for the education of children by having a good time with friends </h3>

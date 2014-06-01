@@ -154,6 +154,20 @@
 	margin-top: 10px;
 }
 
+.cantjoin {
+	display: block;
+	color: #000;
+	font-weight: bold;
+}
+
+.cantjoin a, .cantjoin a:hover {
+	color: #4C82F2;
+}
+
+.purpose {
+	padding-top: 20px;
+}
+
 .mission {
 	padding: 10px 0px 0px;
 }
@@ -197,6 +211,7 @@
 
 .hero h3 {
 	color: #fff;
+	font-size: 18px;
 	font-weight: bold;
 }
 
@@ -391,7 +406,17 @@
 }
 
 .btn-attend {
-	margin: 40px 0px;
+	margin: 40px 0px 10px 0px;
+}
+
+.cantjoin {
+	color: #ffffff;
+	text-shadow: 1px 1px 0px #000;
+}
+
+.cantjoin a {
+	font-weight: bold;
+	text-shadow: none;
 }
 
 .sponsor {

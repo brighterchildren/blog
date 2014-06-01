@@ -92,36 +92,6 @@ get_header(); ?>
 
 <!-- Mission End -->
 
-<!-- CTA Start -->
-<div class="cta parallax-cta">
-	<div class="container">
-		<div class="cta-content">
-			<div class="row">
-				<div class="col-md-2">
-					<!-- Flat Icon -->
-					<img src="wp-content/themes/brighter-children/img/feature2.png" width="150" height="150" class="img-responsive" alt="" />
-				</div>
-				<div class="col-md-7">
-					<!-- Heading -->
-					<h3>Learn more and <strong>make a difference</strong></h3>
-					<!-- Icon & Heading -->
-					<input name="your-name" value="" size="22" class="newsletter-name" aria-required="true" aria-invalid="false" placeholder="Your name" type="text">
-					<input name="your-email" value="" size="22" class="newsletter-email" aria-required="true" aria-invalid="false" placeholder="Your email" type="text">
-
-				</div>
-				<div class="col-md-3">
-					<div class="cta-btn">
-						<!-- Button Link -->
-						<a href="#" class="btn btn-info">Loop me in</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- CTA End -->
-
 <!-- Impact Start -->
 
 <div class="model-three parallax-model-three impact">

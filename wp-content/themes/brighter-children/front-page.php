@@ -36,14 +36,22 @@ get_header(); ?>
 			<ul>
 				<li>Edwin Cherian</li>
 				<li>Joyce Chung</li>
+				<li>Kunal Doshi</li>
 				<li>Jeremy Epstein</li>
 				<li>Ting Yu Hu</li>
 				<li>Courtney Leblanc</li>
 				<li>Dennis Lee</li>
+				<li>Taylor March</li>
+				<li>Suzy Peng</li>
 				<li>Rae Ravich</li>
+				<li>William Reynolds</li>
 				<li>Devon Rinker</li>
+				<li>Sarah Seo</li>
 				<li>Caitlin Stevens</li>
+				<li>Prerna Talreja</li>
+				<li>Ben Travis</li>
 				<li>Jennifer Tung</li>
+				<li>Becca Wolin</li>
 			</ul>
 		</div>
 	</div>

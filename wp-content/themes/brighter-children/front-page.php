@@ -34,16 +34,16 @@ get_header(); ?>
 		<div class="event-hosts">
 			<h3>Hosts</h3>
 			<ul>
-				<li>Devon Rinker</li>
-				<li>Dennis Lee</li>
+				<li>Edwin Cherian</li>
+				<li>Joyce Chung</li>
+				<li>Jeremy Epstein</li>
 				<li>Ting Yu Hu</li>
+				<li>Courtney Leblanc</li>
+				<li>Dennis Lee</li>
+				<li>Rae Ravich</li>
+				<li>Devon Rinker</li>
 				<li>Caitlin Stevens</li>
 				<li>Jennifer Tung</li>
-				<li>Courtney Leblanc</li>
-				<li>Rae Ravich</li>
-				<li>Joyce Chung</li>
-				<li>Edwin Cherian</li>
-				<li>Jeremy Epstein</li>
 			</ul>
 		</div>
 	</div>

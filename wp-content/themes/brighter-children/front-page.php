@@ -31,6 +31,21 @@ get_header(); ?>
 			<h3>Raise money for the education of children by having a good time with friends </h3>
 		</div>
 		<span class="fa fa-angle-down nav-down"></span>
+		<div class="event-hosts">
+			<h3>Hosts</h3>
+			<ul>
+				<li>Devon Rinker</li>
+				<li>Dennis Lee</li>
+				<li>Ting Yu Hu</li>
+				<li>Caitlin Stevens</li>
+				<li>Jennifer Tung</li>
+				<li>Courtney Leblanc</li>
+				<li>Rae Ravich</li>
+				<li>Joyce Chung</li>
+				<li>Edwin Cherian</li>
+				<li>Jeremy Epstein</li>
+			</ul>
+		</div>
 	</div>
 </div>
 

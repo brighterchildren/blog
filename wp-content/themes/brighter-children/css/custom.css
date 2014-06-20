@@ -219,6 +219,21 @@
 	/*padding-top: 20px;*/
 }
 
+.event-hosts {
+	color: #fff;
+}
+
+.event-hosts ul {
+	list-style: none;
+	padding: 0;
+}
+
+.event-hosts li {
+	font-size: 18px;
+}
+
+
+
 .sponsor {
 	background: url('../img/children-smiling-bg.jpg') no-repeat center center fixed;
 	padding: 0px 0px 75px;

@@ -374,6 +374,33 @@
 	text-align: center;
 }
 
+/* Blog posts */
+.wrapper {
+	margin-top: 40px;
+}
+
+.author {
+	background: none;
+	border: none;
+}
+
+.post a {
+	color: #11B575;
+}
+
+.entry-title a {
+	color: #656565;
+}
+
+.entry-meta {
+	margin-top: 9px;
+	margin-bottom: 18px;
+}
+
+.post {
+	margin-bottom: 60px;
+}
+
 /* Tablets */
 @media (max-width: 767px){
 .header .navbar-default .navbar-brand span.logo {

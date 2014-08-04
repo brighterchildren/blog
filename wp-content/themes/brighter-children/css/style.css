@@ -19,8 +19,8 @@ h1,h2,h3,h4,h5,h6{
 }
 
 p{
-	margin:0;
-	padding:0;
+/*	margin:0;
+	padding:0;*/
 }
 
 a{
@@ -1850,38 +1850,25 @@ div.ppt {
 
 /* About Us */
 
-.about{
-	border-top: 1px solid #e6e6e6;
-}
-
-.about .about-skill{
+.about .about-goal{
 	margin: 0 5px;
-	margin-top: 30px;
-	padding: 20px;
+	padding: 5px 20px 20px 20px;
 }
 
-.about .about-skill h3{
-	margin: 0;
-	margin-bottom: 10px;
-	font-size: 28px;
-	font-weight: 700;
-	color: #787878;
-}
-
-.about .about-skill p{
+.about .about-goal p{
 	font-size: 13px;
 	line-height: 23px;
 	color: #9c9c9c;
 }
 
-.about .about-skill a.btn{
+.about .about-goal a.btn{
 	margin-top: 10px;
 	margin-bottom: 15px;
 	font-size: 13px;
 	font-weight: normal;
 }
 
-.about .about-skill .about-quote span.quote{
+.about .about-goal .about-quote span.quote{
 	position: absolute;
 	display: inline-block;
 	width: 70px;
@@ -1891,22 +1878,15 @@ div.ppt {
 	float: left;
 }
 
-.about .about-skill blockquote{
+.about .about-goal blockquote{
 	margin-left: 70px;
 	margin-top: 5px;
 	padding: 0px 15px;
 }
 
-.about .about-skill blockquote p{
-}
-
-.about .about-skill .about-skill-progress{
-	margin-top: 20px;
-}
-
-.about .about-skill .about-skill-progress span.a-skill-title{
+.about .about-goal .about-goal-progress span.a-goal-title{
 	display: block;
-	width: 65px;
+	width: 80px;
 	padding: 3px 0px 3px 6px;
 	font-size: 13px;
 	font-weight: bold;
@@ -1915,19 +1895,19 @@ div.ppt {
 	float: left;
 }
 
-.about .about-skill .about-skill-progress .progress{
+.about .about-goal .about-goal-progress .progress{
 	margin: 0;
-	margin-left: 65px;
+	margin-left: 80px;
 	height: 24px;
 	border-radius: 0px;
 	background: #f8f8f8;
 }
 
-.about .about-skill .about-skill-progress .progress .progress-bar{
+.about .about-goal .about-goal-progress .progress .progress-bar{
 	box-shadow: none;
 }
 
-.about .about-skill .progress .progress-bar span{
+.about .about-goal .progress .progress-bar span{
 	display: block;
 	padding: 3px 6px;
 	font-size: 13px;
@@ -1989,11 +1969,11 @@ div.ppt {
 	color: #9a9a9a;
 }
 
-.about .about-caption .skill{
+.about .about-caption .goal{
 	margin-top: 10px;
 }
 
-.about .about-caption .skill span.skill-title{
+.about .about-caption .goal span.goal-title{
 	display: block;
 	font-size: 13px;
 	text-align: left;
@@ -2002,7 +1982,7 @@ div.ppt {
 	float: left;
 }
 
-.about .about-caption .skill .progress{
+.about .about-caption .goal .progress{
 	position: relative;
 	top: 5px;
 	margin: 0;
@@ -2010,6 +1990,10 @@ div.ppt {
 	height: 9px;
 	border-radius: 5px;
 	background: #f8f8f8;
+}
+
+.btn-annual-report {
+	margin-left: 25px;
 }
 
 .about .about-caption .social{
@@ -3199,7 +3183,7 @@ div.ppt {
 		margin: 0 auto;
 	}
 
-	.about .about-skill{
+	.about .about-goal{
 		max-width: 350px;
 		margin: 0 auto;
 		margin-bottom: 10px;
@@ -3350,7 +3334,7 @@ div.ppt {
 		margin-top: 20px;
 	}
 	
-	.about .about-skill p{
+	.about .about-goal p{
 		margin-bottom: 10px;
 	}
 	

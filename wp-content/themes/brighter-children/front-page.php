@@ -16,43 +16,28 @@ get_header(); ?>
 <!-- Hero Start -->
 
 <div class="parallax-model-three hero">
-	<div class="caption">
-		Original photo by <a href="http://laughingsquid.com/">Scott Beale / Laughing Squid</a>
-	</div>
 	<div class="container">
 		<div class="heading shadow">
-			<h2>Come join us at <br />Frying Pan</h2>
-			<h3>for the summer's best day party</h3>
-			<h3>Sat, June 28 1:00-4:30pm</h3>
-			<a href="http://www.eventbrite.com/e/the-summers-best-day-party-at-frying-pan-tickets-11811734215?aff=ws" class="btn btn-danger btn-lg btn-attend"><div class="join-large"></div>Buy a ticket</a>
-			<span class="cantjoin">Can't join? <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=J3JNX5R96KSHA&lc=US&item_name=Brighter%20Children&no_note=0&cn=Add%20special%20instructions%20to%20the%20seller%3a&no_shipping=1&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted">Donate</a></span>
+			<h2>Shop for a cause</h2>
+			<h3>Get 25% off at any Macy's for just $5</h3>
+			<h3>Saturday, August 23</h3>
+			<h3>Text us to pick up your pass</h3>
+			<a href="sms:+13474804026?body=How%20do%20I%20get%20my%20Macy's%20pass?" class="btn btn-lg btn-text">
+				<i class="fa fa-comment-o"></i>
+				347-480-4026</a>
 		</div>
 		<div class="purpose">
-			<h3>Raise money for the education of children by having a good time with friends </h3>
+			<h3>Raise money for the education of children while shopping</h3>
 		</div>
 		<span class="fa fa-angle-down nav-down"></span>
-		<div class="event-hosts">
-			<h3>Hosts</h3>
-			<ul>
-				<li>Edwin Cherian</li>
-				<li>Joyce Chung</li>
-				<li>Kunal Doshi</li>
-				<li>Jeremy Epstein</li>
-				<li>Ting Yu Hu</li>
-				<li>Courtney Leblanc</li>
-				<li>Dennis Lee</li>
-				<li>Taylor March</li>
-				<li>Suzy Peng</li>
-				<li>Rae Ravich</li>
-				<li>William Reynolds</li>
-				<li>Devon Rinker</li>
-				<li>Sarah Seo</li>
-				<li>Caitlin Stevens</li>
-				<li>Prerna Talreja</li>
-				<li>Ben Travis</li>
-				<li>Jennifer Tung</li>
-				<li>Becca Wolin</li>
-			</ul>
+		<div>
+			<h4>save 25%</h4>
+			<p>on regular, sale and clearance items, including home - even save on most brands usually excluded!</p>
+			<h4>save 10%</h4>
+			<p>on eletrics/electronics, watches, furniture, mattresses, and rugs/floor coverings</p>
+		</div>
+		<div class="caption">
+			Original photo by <a href="https://www.flickr.com/photos/rwp-roger/3155147413">Roger Price</a>
 		</div>
 	</div>
 </div>

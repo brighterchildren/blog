@@ -36,7 +36,7 @@ get_header(); ?>
 			<h4>save 10%</h4>
 			<p>on eletrics/electronics, watches, furniture, mattresses, and rugs/floor coverings</p>
 		</div>
-		<div class="caption">
+		<div class="caption-shop">
 			Original photo by <a href="https://www.flickr.com/photos/rwp-roger/3155147413">Roger Price</a>
 		</div>
 	</div>

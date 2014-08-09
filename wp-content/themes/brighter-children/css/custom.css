@@ -460,6 +460,10 @@
 	text-shadow: 1px 1px 0px #000;
 }
 
+.hero h3 {
+	font-weight: unset;
+}
+
 .heading-small {
 	font-size: 24px;
 }

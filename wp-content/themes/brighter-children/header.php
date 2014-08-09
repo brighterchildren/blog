@@ -66,7 +66,7 @@ var WRInitTime=(new Date()).getTime();
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="nav-donate" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=J3JNX5R96KSHA&lc=US&item_name=Brighter%20Children&no_note=0&cn=Add%20special%20instructions%20to%20the%20seller%3a&no_shipping=1&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted">Donate</a></li>
+						<li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=J3JNX5R96KSHA&amp;lc=US&amp;item_name=Brighter%20Children&amp;no_note=0&amp;cn=Add%20special%20instructions%20to%20the%20seller%3a&amp;no_shipping=1&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted">Donate</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div>

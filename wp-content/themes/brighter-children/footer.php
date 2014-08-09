@@ -26,9 +26,10 @@
 						<a href="/about">about</a>
 						<a href="/about/team">team</a>
 						<a href="/faq">faq</a>
+						<a href="/financials">financials</a>
 					</div>
 					<div class="organization">
-						Brighter Children is a non-profit organization
+						Brighter Children is an all-volunteer 501(c)(3) non-profit organization &amp; all proceeds go to charity
 					</div>
 				</div>
 			</div>

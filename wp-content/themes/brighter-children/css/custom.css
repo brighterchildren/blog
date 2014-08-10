@@ -394,6 +394,70 @@
 .number { font-size: 2.65em; margin-right: 3px; vertical-align: -6px; }
 .stats-more { margin-left: 20px; clear: left; margin-bottom: 20px; }
 
+/* Financials page */
+
+blockquote {
+    margin-left: 70px;
+    margin-top: 5px;
+    padding: 0px 15px;
+}
+
+.about-quote {
+	min-height: 90px;
+	max-width: 530px;
+}
+
+.about-quote span.quote {
+    color: #07B873;
+}
+
+.about-quote span.quote {
+    position: absolute;
+    display: inline-block;
+    width: 70px;
+    font-size: 130px;
+    line-height: 140px;
+    text-align: center;
+    float: left;
+}
+
+.quote {
+    text-shadow: none !important;
+}
+
+.btn-financials {
+	height: 70px;
+	width: 296px;
+	font-size: 18px;
+	padding: 22px 22px 22px 15px;
+	margin: 0 15px 15px 0;
+	text-align: left;
+	background: none repeat scroll 0% 0% #07B873;
+	color: #fff;
+}
+
+.btn-financials i {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+ 	float: left;
+ 	margin-right: 15px;
+}
+
+.btn-financials small {
+	display: block;
+	font-style: italic;
+}
+
+.btn-financials:hover {
+	color: #fff !important;
+	background: none repeat scroll 0% 0% #51D466;
+}
+
+
 /* Team page */
 .post-1270 {
 	text-align: center;

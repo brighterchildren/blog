@@ -22,9 +22,10 @@ get_header(); ?>
 			<h3>Get 25% off at any Macy's for just $5</h3>
 			<h3>Saturday, August 23</h3>
 			<h3>Text us to pick up your pass</h3>
-			<a href="sms:+13474804026?body=How%20do%20I%20get%20my%20Macy's%20pass?" class="btn btn-lg btn-text">
+			<a href="sms:13474804026?body=How%20do%20I%20get%20my%20Macy's%20pass?" class="btn btn-lg btn-text">
 				<i class="fa fa-comment-o"></i>
-				347-480-4026</a>
+				347-480-4026
+			</a>
 		</div>
 		<div class="purpose">
 			<h3>Raise money for the education of children while shopping</h3>

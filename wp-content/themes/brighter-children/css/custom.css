@@ -373,6 +373,19 @@
     padding: 0px 20px;
 }
 
+.about .about-goal {
+	margin: 0 5px;
+	max-width: none;
+}
+
+.about .about-goal .about-goal-progress span.a-goal-title {
+	width: 90px;
+}
+
+.about .about-goal .about-goal-progress .progress {
+	margin: 0 0 0 90px;
+}
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%;

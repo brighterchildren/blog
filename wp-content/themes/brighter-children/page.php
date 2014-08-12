@@ -13,7 +13,6 @@
 get_header(); ?>
 
 	<!-- Mission Start -->
-	<div class="mission">
 		<div class="container">
 
 
@@ -30,6 +29,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 </div><!-- #container -->
-</div><!-- #mission -->
 
 <?php get_footer(); ?>

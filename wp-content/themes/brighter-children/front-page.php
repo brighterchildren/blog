@@ -271,7 +271,7 @@ get_header(); ?>
 				<!-- Image -->
 				<a href="http://villageprojectafrica.org/"><img src="wp-content/themes/brighter-children/img/partner/village-project-africa.jpg" width="150" height="55" class="img-responsive" alt="Village Project Africa" /></a>
 				<!-- Image -->
-				<a href="http://gridministries.org/"><img src="wp-content/themes/brighter-children/img/partner/grid-ministries.jpg" width="150" height="55" class="img-responsive" alt="Grid Ministries" /></a>
+				<a href="http://gridministries.org/"><img src="wp-content/themes/brighter-children/img/partner/hope-4-kidz.jpg" width="150" height="55" class="img-responsive" alt="Hope 4 Kidz International" /></a>
 			</div>
 		</div>
 	</div>

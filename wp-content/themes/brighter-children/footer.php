@@ -24,6 +24,7 @@
 					<!-- Nav -->
 					<div class="nav">
 						<a href="/about">about</a>
+						<a href="/blog">blog</a>
 						<a href="/about/team">team</a>
 						<a href="/faq">faq</a>
 						<a href="/financials">financials</a>

@@ -38,7 +38,7 @@ $(document).ready(function(){
 	$('.parallax-cta').parallax("50%", 0.2);
 	$('.parallax-sponsor').parallax("50%", 0.2);
 	$('.parallax-model-two').parallax("50%", 0.3);
-	$('.parallax-model-three').parallax("50%", 0.6);
+	$('.parallax-model-three').parallax("10%", 0.6);
 	$('.parallax-video').parallax("50%", 0.3);
 	$('.parallax-model-five').parallax("50%", 0.2);
 });
@@ -89,14 +89,6 @@ $(document).ready(function(){
 		offset: '75%' 
 	});
 		
-	// Feature Way Points
-	$('.feature-item').waypoint(function(down){
-		$(this).addClass('animation');
-		$(this).addClass('fadeInUp');
-	}, { 
-		offset: '65%' 
-	});
-	
 	// Author Content Way Points 
 	$('.author-content').waypoint(function(down){
 		$(this).addClass('animation');

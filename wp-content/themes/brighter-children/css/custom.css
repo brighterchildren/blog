@@ -54,7 +54,7 @@
 }
 
 .banner-container {
-    background: url('../img/hero-classroom.jpg') no-repeat fixed center center #FFF;
+    /*background: url('../img/hero-classroom.jpg') no-repeat fixed center center #FFF;*/
 }
 
 .header .navbar-default .navbar-brand span.logo {
@@ -66,7 +66,6 @@
 }
 
 .hero .container .heading.shadow h2 {
-	color: #E11A2B;
 	margin-top: 30px;
 }
 
@@ -80,6 +79,10 @@
 
 .heading.shadow {
 	margin-bottom: 0px;
+}
+
+.hero .feature-item {
+	opacity: 1;
 }
 
 .purpose h3 {
@@ -221,7 +224,7 @@
 }
 
 .hero {
-	background: url('../img/store-display.jpg') no-repeat center center fixed;
+	background: url('../img/hero-classroom.jpg') no-repeat center center fixed;
 	padding: 20px 0px 0px 0px;
 }
 
@@ -233,7 +236,6 @@
 
 .hero h4 {
 	color: #fff;
-	background: #E11A2B;
 	margin: 10px auto;
 	padding: 3px 0;
 	max-width: 600px;
@@ -244,6 +246,19 @@
 .hero .action {
 	/*padding-top: 20px;*/
 }
+
+.hero .feature-item i {
+	font-size: 80px;
+}
+
+.hero .red i {
+	color: red;
+}
+
+.hero .blue i {
+	color: blue;
+}
+
 
 .event-hosts {
 	color: #fff;
@@ -511,6 +526,10 @@ blockquote {
 	/*font-size: 16px;*/
 }
 
+.hero {
+	padding: 12px 0px 40px;	
+}
+
 .mission .mission-heading h1 {
     font-size: 24px;
     line-height: 28px;
@@ -547,7 +566,7 @@ blockquote {
 }
 
 .hero {
-	padding: 12px 0px 220px;	
+	padding: 12px 0px 70px;	
 }
 
 .purpose h3 {

@@ -15,9 +15,60 @@ get_header(); ?>
 
 <!-- Hero Start -->
 
-<div class="parallax-model-three hero">
+<div class="parallax-model-three hero feature">
 	<div class="container">
-		
+		<div class="heading shadow">
+			<!-- Heading -->
+			<h2>Make a difference</h2>
+			<!-- Sub Heading -->
+			<h6>You can help send children to school</h6>
+			<hr />
+			<!-- Paragraph -->
+			<p>Our approach is simple</p>
+			<!-- Border -->
+			<div class="border"></div>
+		</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-4">
+					<!-- Feature Item -->
+					<div class="feature-item animated">
+						<a href="#">
+							<!-- Dollar Icon Image -->
+							<i class="fa fa-usd green"></i>
+							<!-- Title -->
+							<span class="f-item-title">Raise money</span>
+						</a>
+						<!-- Paragraph -->
+						<p>We raise money for kids through events and donations</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<!-- Feature Item -->
+					<div class="feature-item animated">
+						<a href="#">
+							<!-- Flat Icon Image -->
+							<i class="fa fa-map-marker red"></i>
+							<!-- Title -->
+							<span class="f-item-title">Partner locally</span>
+						</a>
+						<!-- Paragraph -->
+						<p>We work with local organizations we vet to provide educational resources.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<!-- Feature Item -->
+					<div class="feature-item animated">
+						<a href="#">
+							<!-- Graduation Cap Icon Image -->
+							<i class="fa fa-graduation-cap blue"></i>
+							<!-- Title -->
+							<span class="f-item-title">Educate children</span>
+						</a>
+						<!-- Paragraph -->
+						<p>Kids go to school and get resources from Brighter Children.</p>
+					</div>
+				</div>
+			</div>
 	</div>
 </div>
 

@@ -17,29 +17,7 @@ get_header(); ?>
 
 <div class="parallax-model-three hero">
 	<div class="container">
-		<div class="heading shadow">
-			<h2>Shop for a cause</h2>
-			<h3>Get 25% off at any Macy's for just $5</h3>
-			<h3>Saturday, August 23</h3>
-			<h3>Text us to pick up your pass</h3>
-			<a href="sms:1-347-480-4026" class="btn btn-lg btn-text">
-				<i class="fa fa-comment-o"></i>
-				347-480-4026
-			</a>
-		</div>
-		<div class="purpose">
-			<h3>Raise money for the education of children while shopping</h3>
-		</div>
-		<span class="fa fa-angle-down nav-down"></span>
-		<div>
-			<h4>save 25%</h4>
-			<p>on regular, sale and clearance items, including home - even save on most brands usually excluded!</p>
-			<h4>save 10%</h4>
-			<p>on eletrics/electronics, watches, furniture, mattresses, and rugs/floor coverings</p>
-		</div>
-		<div class="caption-shop">
-			Original photo by <a href="https://www.flickr.com/photos/rwp-roger/3155147413">Roger Price</a>
-		</div>
+		
 	</div>
 </div>
 

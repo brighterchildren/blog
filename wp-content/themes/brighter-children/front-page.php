@@ -39,7 +39,7 @@ get_header(); ?>
 							<span class="f-item-title">Raise money</span>
 						</a>
 						<!-- Paragraph -->
-						<p>We raise money for kids through events and donations</p>
+						<p>We raise money for kids through events and donations.</p>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-4">

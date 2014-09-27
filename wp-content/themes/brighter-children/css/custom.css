@@ -507,17 +507,28 @@ blockquote {
 	color: #11B575;
 }
 
+.entry-title {
+	font-size: 37px;
+}
+
 .entry-title a {
 	color: #656565;
 }
 
 .entry-meta {
+	font-size: 12px;
 	margin-top: 9px;
 	margin-bottom: 18px;
 }
 
 .post {
 	margin-bottom: 60px;
+}
+
+.post p {
+	font-size: 16px;
+	line-height: 1.6;
+	margin: 15px 0;
 }
 
 /* Tablets */
@@ -605,6 +616,19 @@ blockquote {
 .impact {
 	padding: 110px 0px 130px;
 
+}
+
+/* Blog posts */
+.entry-title {
+	font-size: 50px;
+}
+
+.entry-meta {
+	font-size: 16px;
+}
+
+.post p {
+	font-size: 21px;
 }
 }
 

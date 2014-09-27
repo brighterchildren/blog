@@ -339,6 +339,7 @@
 .footer {
 	text-align: center;
 	color: rgba(239, 229, 231, 0.77);
+	background: #221F20;
 }
 
 .footer .nav {
@@ -348,6 +349,10 @@
 .footer .nav a {
 	margin: 0 5px;
 	color: rgba(239, 229, 231, 0.77);
+}
+
+.footer .grassroots {
+	margin: 50px 0 20px 0;
 }
 
 /* Style elements */

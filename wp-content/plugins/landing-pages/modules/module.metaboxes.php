@@ -10,7 +10,7 @@ define('WYSIWYG_EDITOR_ID', 'landing-page-myeditor');
 define('WYSIWYG_META_KEY', 'lp-conversion-area');
 
 /* ADD THUMBNAIL METABOX TO SIDEBAR */
-add_action('add_meta_boxes', 'lp_display_thumbnail_metabox');
+//add_action('add_meta_boxes', 'lp_display_thumbnail_metabox');
 function lp_display_thumbnail_metabox() {
 
 		add_meta_box(
@@ -27,11 +27,22 @@ function lp_thumbnail_metabox() {
 
 	$template = get_post_meta($post->ID, 'lp-selected-template', true);
 	$template = apply_filters('lp_selected_template',$template);
-
 	$permalink = get_permalink($post->ID);
 	$datetime = the_modified_date('YmjH',null,null,false);
 	$permalink = $permalink.'?dt='.$datetime;
-	$thumbnail = 'http://s.wordpress.com/mshots/v1/' . urlencode(esc_url($permalink)) . '?w=250';
+
+	if (in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1'))) {
+
+		if (file_exists(LANDINGPAGES_UPLOADS_PATH .  $template . '/thumbnail.png')) {
+			$thumbnail = LANDINGPAGES_UPLOADS_URLPATH . $template . '/thumbnail.png';
+		}
+		else {
+			$thumbnail = LANDINGPAGES_URLPATH . 'templates/' . $template . '/thumbnail.png';
+		}
+
+	} else {
+		$thumbnail = 'http://s.wordpress.com/mshots/v1/' . urlencode(esc_url($permalink)) . '?w=250';
+	}
 	$permalink = apply_filters('lp_live_screenshot_url', $permalink);
 	?>
 	<div >
@@ -269,7 +280,7 @@ function lp_display_meta_box_select_template_container() {
 
 
 	$extension_data = lp_get_extension_data();
-	$extension_data_cats = lp_get_extension_data_cats($extension_data);
+	$extension_data_cats = Landing_Pages_Load_Extensions::get_template_categories();
 
 	unset($extension_data['lp']);
 
@@ -439,9 +450,11 @@ function landing_pages_save_custom_js($post_id) {
 add_action('add_meta_boxes', 'add_custom_meta_box_lp_conversion_log');
 
 function add_custom_meta_box_lp_conversion_log() {
-   add_meta_box('lp_conversion_log_metabox', __( 'Lead Captures' , 'landing-pages') , 'lp_conversion_log_metabox', 'landing-page', 'normal', 'low');
+   //add_meta_box('lp_conversion_log_metabox', __( 'Lead Captures' , 'landing-pages') , 'lp_conversion_log_metabox', 'landing-page', 'normal', 'low');
 }
 
+
+/* This class lists recent conversions for a landing page */
 function lp_conversion_log_metabox() {
 
 
@@ -459,6 +472,8 @@ function lp_conversion_log_metabox() {
 			global $wpdb;
 
 			$final_data = array();
+
+
 			$query = "SELECT
 				wposts.*
 				FROM ".$wpdb->posts." AS wposts
@@ -503,24 +518,7 @@ function lp_conversion_log_metabox() {
 
 					$final_data[] = $this_data;
 				}
-				/* Port Old Conversion Logs to new inbound_conversion_data. Not Finished
-				$page_conversion_data = get_post_meta( $post->ID, 'inbound_conversion_data', TRUE );
-				$page_conversion_data = json_decode($page_conversion_data,true);
-				$version = '0';
-				if (is_array($page_conversion_data)){
-					$convert_count = count($page_conversion_data) + 1;
-					$page_conversion_data[$convert_count]['lead_id'] = $row['ID'];
-					$page_conversion_data[$convert_count]['variation'] = $version;
-					$page_conversion_data[$convert_count]['datetime'] = $datetime;
-				} else {
-					$convert_count = 1;
-					$page_conversion_data[$convert_count]['lead_id'] = $row['ID'];
-					$page_conversion_data[$convert_count]['variation'] = $version;
-					$page_conversion_data[$convert_count]['datetime'] = $datetime;
-				}
-				$page_conversion_data = json_encode($page_conversion_data);
-				update_post_meta($post->ID, 'inbound_conversion_data', $page_conversion_data);
-				*/
+
 			}
 			//print_r($final_data);
 			$this->table_data = $final_data;

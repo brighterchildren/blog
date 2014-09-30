@@ -51,7 +51,7 @@ $(document).ready(function(){
 	$(".p-img-container > a").hover(function(){
 		$(this).children(".pf-caption").slideDown(400); 
 		}, function(){
-		$(this).children(".pf-caption").slideUp(400);
+		// $(this).children(".pf-caption").slideUp(400);
 	});
  });
 

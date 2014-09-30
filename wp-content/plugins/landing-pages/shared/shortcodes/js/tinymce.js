@@ -41,17 +41,7 @@ if (cta_status > -1) {
 }
 
 
-jQuery(".launch-marketing-sc").on('click', function () {
-	var test = jQuery("#choose-inbound-shortcode").clone();
 
-	window.tb_remove();
-	var shortcode = jQuery(this).attr('data-launch-sc');
-
-	setTimeout(function() {
-	 tb_show( inbound_load.pop_title, inbound_load.image_dir + 'popup.php?popup=' + shortcode + '&width=' + 900 + "&path=" + inbound_load.image_dir);
-	        }, 500);
-
-});
 /* Broken from 3.9 forward
 var shortcode_addons = ["landing-pages","cta","leads"]; // Addon example
 	tinyMCE.create('tinymce.plugins.InboundShortcodes', {
@@ -119,7 +109,7 @@ var shortcode_addons = ["landing-pages","cta","leads"]; // Addon example
 						a.addWithPopup( b, myArray[i], myArray[i] );
 					}
 					*/
-					/*
+					/**
 					//a.addWithPopup( b, 'Insert Button Shortcode',  'button' );
 					//a.addWithPopup( b, 'Alert', 'alert' );
 					//a.addWithPopup( b, 'Call Out', 'callout' );

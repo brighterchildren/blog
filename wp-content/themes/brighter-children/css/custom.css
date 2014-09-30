@@ -335,6 +335,16 @@
     bottom: 44.5%;
 }
 
+/* Children page */
+.pf-caption {
+	color: #656565;
+}
+
+.portfolio-item .p-img-container .pf-caption span.title {
+	background: #E8CD31;
+}
+
+
 /* Footer */
 .footer {
 	text-align: center;

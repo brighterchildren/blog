@@ -3,34 +3,36 @@
 add_action('admin_enqueue_scripts','lp_admin_enqueue');
 
 function lp_admin_enqueue($hook) {
-	global $post;
-	$screen = get_current_screen(); //print_r($screen);
+	global $post, $plugin_page;
+	$screen = get_current_screen();
+	$store = array();
+
 	/* dequeue third party scripts */
 	global $wp_scripts;
-	
+
 	if ( !empty( $wp_scripts->queue ) ) {
 	      $store = $wp_scripts->queue; // store the scripts
 	      foreach ( $wp_scripts->queue as $handle ) {
 	          wp_dequeue_script( $handle );
 	      }
 	}
-	
+
 
 	//enqueue styles and scripts
 	wp_enqueue_style('lp-admin-css', LANDINGPAGES_URLPATH . 'css/admin-style.css');
 
 
 	// Frontend Editor
-	if ((isset($_GET['page']) == 'lp-frontend-editor')) {
+	if ( $plugin_page === 'lp-frontend-editor' ) {
 	}
 
-	if ((isset($_GET['page']) == 'install-inbound-plugins')) {
+	if ( $plugin_page === 'install-inbound-plugins' ) {
 		wp_enqueue_script('inbound-install-plugins', LANDINGPAGES_URLPATH . 'js/admin/admin.install-plugins.js');
 		wp_enqueue_style('inbound-install-plugins-css', LANDINGPAGES_URLPATH . 'css/admin-install-plugins.css');
 	}
 
 	// Store Options Page
-	if (isset($_GET['page']) && (($_GET['page'] == 'lp_store') || ($_GET['page'] == 'lp_addons'))) {
+	if ( in_array( $plugin_page, array( 'lp_store', 'lp_addons' ) ) ) {
 		wp_dequeue_script('easyXDM');
 		wp_enqueue_script('easyXDM', LANDINGPAGES_URLPATH . 'js/libraries/easyXDM.debug.js');
 		//wp_enqueue_script('lp-js-store', LANDINGPAGES_URLPATH . 'js/admin/admin.store.js');
@@ -38,7 +40,7 @@ function lp_admin_enqueue($hook) {
 
 	// Admin enqueue - Landing Page CPT only
 	if ((isset($post) && 'landing-page'== $post->post_type)|| (isset($_GET['post_type']) && $_GET['post_type']=='landing-page' )) {
-	
+
 		wp_enqueue_script(array('jquery', 'editor', 'thickbox', 'media-upload'));
 		wp_enqueue_script('jpicker', LANDINGPAGES_URLPATH . 'js/libraries/jpicker/jpicker-1.1.6.min.js');
 		wp_localize_script( 'jpicker', 'jpicker', array( 'thispath' => LANDINGPAGES_URLPATH.'js/libraries/jpicker/images/' ));
@@ -66,13 +68,13 @@ function lp_admin_enqueue($hook) {
 			wp_localize_script('lp-js-metaboxes', 'data', $params);
 
 			// Conditional TINYMCE for landing pages
-			wp_dequeue_script('jquery-tinymce');
-			wp_enqueue_script('jquery-tinymce', LANDINGPAGES_URLPATH . 'js/libraries/tiny_mce/jquery.tinymce.js');
+			//wp_dequeue_script('jquery-tinymce');
+			//wp_enqueue_script('jquery-tinymce', LANDINGPAGES_URLPATH . 'js/libraries/tiny_mce/jquery.tinymce.js');
 			wp_enqueue_style('inbound-metaboxes', LANDINGPAGES_URLPATH . 'shared/metaboxes/inbound-metaboxes.css');
 
 		}
 
-		if (isset($_GET['page']) && $_GET['page'] === 'lp_global_settings') {
+		if ( $plugin_page === 'lp_global_settings' ) {
 			wp_enqueue_script('lp-settings-js', LANDINGPAGES_URLPATH . 'js/admin/admin.global-settings.js');
 		}
 		// Edit Screen
@@ -82,7 +84,7 @@ function lp_admin_enqueue($hook) {
 			wp_localize_script( 'lp-post-edit-ui', 'lp_post_edit_ui', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ), 'post_id' => $post->ID , 'wp_landing_page_meta_nonce' => wp_create_nonce('wp-landing-page-meta-nonce'),  'lp_template_nonce' => wp_create_nonce('lp-nonce') ) );
 			wp_enqueue_style('admin-post-edit-css', LANDINGPAGES_URLPATH . 'css/admin-post-edit.css');
 			wp_enqueue_script('jqueryui');
-			
+
 			// jquery datepicker
 			wp_enqueue_script('jquery-datepicker', LANDINGPAGES_URLPATH . 'js/libraries/jquery-datepicker/jquery.timepicker.min.js');
 			wp_enqueue_script('jquery-datepicker-base', LANDINGPAGES_URLPATH . 'js/libraries/jquery-datepicker/lib/base.js');
@@ -91,12 +93,14 @@ function lp_admin_enqueue($hook) {
 			wp_enqueue_script('jquery-datepicker-functions', LANDINGPAGES_URLPATH . 'js/libraries/jquery-datepicker/picker_functions.js');
 			wp_enqueue_style('jquery-timepicker-css', LANDINGPAGES_URLPATH . 'js/libraries/jquery-datepicker/jquery.timepicker.css');
 			wp_enqueue_style('jquery-datepicker-base.css', LANDINGPAGES_URLPATH . 'js/libraries/jquery-datepicker/lib/base.css');
-			
+
 			// New frontend editor
 			if (isset($_GET['frontend']) && $_GET['frontend'] === 'true') {
 				//show_admin_bar( false ); // doesnt work
-				wp_enqueue_style('new-customizer-admin', LANDINGPAGES_URLPATH . 'css/new-customizer-admin.css');
-				wp_enqueue_script('new-customizer-admin', LANDINGPAGES_URLPATH . 'js/admin/new-customizer-admin.js');
+
+				wp_enqueue_style('lp-customizer-admin', LANDINGPAGES_URLPATH . 'css/new-customizer-admin.css');
+				wp_enqueue_script('lp-customizer-admin', LANDINGPAGES_URLPATH . 'js/admin/new-customizer-admin.js');
+
 			}
 		}
 
@@ -119,11 +123,11 @@ function lp_admin_enqueue($hook) {
 		}
 
 	} else {
-		
+
 		if ($hook == 'post.php') {
 
 			wp_enqueue_style('lp-ab-testing-admin-css', LANDINGPAGES_URLPATH . 'css/admin-ab-testing.css');
-			
+
 		}
 	}
 	/* Requeue third party scripts */
@@ -131,5 +135,7 @@ function lp_admin_enqueue($hook) {
 		foreach ( $store as $handle ) {
 		    wp_enqueue_script( $handle );
 		}
+		/* TEMP FIX - this neeeds fixing in CTA plugin */
+		wp_dequeue_script('new-customizer-admin');
 	}
 }

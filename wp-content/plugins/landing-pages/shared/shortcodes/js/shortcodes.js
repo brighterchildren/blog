@@ -525,7 +525,7 @@
 					       setTimeout(function() {
 					                     jQuery("#insert_inbound_cta").select2("open");
 					               }, 500);
-					       jQuery("body").on('change', '#insert_inbound_cta', function () {
+					       jQuery("body").on('change', '#insert_inbound_cta, #inbound_shortcode_align', function () {
 					       	var cta_ids = jQuery("#insert_inbound_cta").select2("data");
 					       	var cta_val = jQuery("#insert_inbound_cta").select2("val");
 					       //	alert("Selected value is: "+jQuery("#insert_inbound_cta").select2("data"));
@@ -539,8 +539,9 @@
 
 					       	console.log(cta_id_array);
 					       	var final_ids = cta_id_array.join();
+					       	var align = jQuery('#inbound_shortcode_align').val();
 					       	setTimeout(function() {
-					       	jQuery("#_inbound_shortcodes_newoutput").html('[cta id="'+final_ids+'"]');
+					       jQuery("#_inbound_shortcodes_newoutput").html('[cta id="'+final_ids+'" align="'+align+'"]');
 					       	        }, 1000);
 					           });
 				}
@@ -598,6 +599,12 @@
 							var send_email_subject = '';
 							var email_contents = ''; // if post created on other post
 						}
+
+						if ( typeof email_contents == 'undefined' ) {
+							 email_contents = jQuery('#content').val();
+						}
+
+
 						var email_exists = InboundShortcodes.get_email();
 						console.log(email_exists);
 						if(email_exists != "" ) {
@@ -691,7 +698,7 @@
 				                	var ctmce= jQuery('#' + insert_to + '-tmce');
 				                	switchEditors.switchto(chtml[0]); // switch to html
 
-				                	tb_remove();
+				                	//tb_remove();
 				                	//jQuery('html, body').animate({
 				                	//       scrollTop: jQuery("#" + insert_to + "_InboundShortcodesButton_action").offset().top -200
 				                	//   }, 200);
@@ -710,25 +717,45 @@
 				     }
 				        return false;
 				});
+				function debounce(func, wait, immediate) {
+					var timeout;
+					return function() {
+						var context = this, args = arguments;
+						var later = function() {
+							timeout = null;
+							if (!immediate) func.apply(context, args);
+						};
+						var callNow = immediate && !timeout;
+						clearTimeout(timeout);
+						timeout = setTimeout(later, wait);
+						if (callNow) func.apply(context, args);
+					};
+				};
 
 				jQuery('body').on('change, keyup', '.inbound-shortcodes-child-input', function() {
-					InboundShortcodes.generateChild(); // runs refresh for children
-					var update_dom = jQuery(this).val();
-					var update_dom = update_dom.replace(/"/g, "'");
-					jQuery(this).attr('value', update_dom);
+					clearTimeout(jQuery.data(this, 'typeTimer'));
+					   jQuery.data(this, 'typeTimer', setTimeout(function() {
+						InboundShortcodes.generateChild(); // runs refresh for children
+						var update_dom = jQuery(this).val();
+						var update_dom = update_dom.replace(/"/g, "'");
+						jQuery(this).attr('value', update_dom);
+					}, 1000));
 				});
 
 				jQuery('.inbound-shortcodes-input', form).on('change, keyup', function () {
-					var exclude_input = jQuery(this).parent().parent().parent().parent().hasClass('exclude-from-refresh');
-					console.log('yes');
-					console.log(exclude_input);
-					if (exclude_input != 'true'){
-					InboundShortcodes.generate(); // runs refresh
-					InboundShortcodes.generateChild();
-				}
-					var update_dom = jQuery(this).val();
-					var update_dom = update_dom.replace(/"/g, "'");
-					jQuery(this).attr('value', update_dom);
+					clearTimeout(jQuery.data(this, 'typeTimer'));
+						jQuery.data(this, 'typeTimer', setTimeout(function() {
+							var exclude_input = jQuery(this).parent().parent().parent().parent().hasClass('exclude-from-refresh');
+							console.log('yes');
+							console.log(exclude_input);
+							if (exclude_input != 'true'){
+							InboundShortcodes.generate(); // runs refresh
+							InboundShortcodes.generateChild();
+							}
+							var update_dom = jQuery(this).val();
+							var update_dom = update_dom.replace(/"/g, "'");
+							jQuery(this).attr('value', update_dom);
+					}, 1000));
 				});
 
 				jQuery('body').on('change', 'input[type="checkbox"], input[type="radio"], input[type="color"], select', function () {
@@ -814,6 +841,10 @@
 				}, 2000);
 	    		jQuery("body").on('click', '.inbound-shortcodes-insert-cancel', function () {
 	    			window.tb_remove();
+	    			setTimeout(function() {
+	    			 setGlobaltinymce(INTMCE);
+	    			 console.log('reset mce');
+	    			 }, 300);
 	    		});
 
 			},
@@ -832,7 +863,7 @@
 
 						return false;
 					}
-	/*
+	/**
 					if ( shortcode_name === "insert_inbound_form_shortcode" && form_name == "") {
 						var email_field = 'x';
 						var test = get_email();
@@ -866,20 +897,27 @@
 								 if (insert_to === null || insert_to === "") {
 								 	var insert_to = 'content';
 								}
-								console.log(insert_to);
+								console.log('Insert into:', insert_to);
 								//window.tinymce.execInstanceCommand(insert_to, 'mceInsertContent', false, output_cleaned);
 								window.send_to_editor(output_cleaned);
 								//window.tinymce.activeEditor.execCommand('mceInsertContent', false, output_cleaned);
 								/* Fix for editor not recognizing shortcode' */
 								var chtml= jQuery('#' + insert_to + '-html');
 								var ctmce= jQuery('#' + insert_to + '-tmce');
+								// console.log('obj', chtml);
+								// console.log('2nd', ctmce);
 								switchEditors.switchto(chtml[0]); // switch to html
 
-								tb_remove();
+								//tb_remove();
 								//jQuery('html, body').animate({
 								//       scrollTop: jQuery("#" + insert_to + "_InboundShortcodesButton_action").offset().top -200
 								//   }, 200);
 								switchEditors.switchto(ctmce[0]); // switch to tinymce
+								setTimeout(function() {
+								 setGlobaltinymce(INTMCE);
+								 console.log('reset mce');
+								 }, 300);
+
 						}
 
 				},
@@ -899,12 +937,12 @@
 				// fix regex for < and > the stripping breaks shortcodes
 				//var html = html.replace(/"/g, "QUOT");
 				//var html = html.replace(/'/g, "QUOT_SINGLE");
-				//var the_html = jQuery('<div/>').text(html).html();
-				//var the_html = the_html.replace(/'/g,'&#039;');
-				//var the_html = the_html.replace(/&lt;/g, "<");
-				//var the_html = the_html.replace(/&gt;/g, ">");
-				//var the_html = the_html.replace(/%3C/g, "<");
-				//var the_html = the_html.replace(/%3E/g, ">");
+				//var html = jQuery('<div/>').text(html).html();
+				//var html = the_html.replace(/'/g,'&#039;');
+				//var html = html.replace(//g, "<");
+				//var html = html.replace(//g, ">");
+				var html = html.replace(/</g, "&lt;");
+				var html = html.replace(/>/g, "&gt;");
 				var html = html.replace(/\?/g, "%3F");
 				var html = html.replace(/\/>/, "%2F%3E");
 				//var html = html.replace(/&/g, "%26");
@@ -914,10 +952,57 @@
 			}
 
 		};
-
+		if (typeof (wp) != "undefined" && wp != null && wp != "") {
+			var INTMCE = wp;
+		} else {
+			var INTMCE = null;
+		}
+		function setGlobalwp(retString){
+		    INTMCE = retString;
+		}
+		function setGlobaltinymce(retString){
+		    wp = retString;
+		}
 		jQuery(document).ready( function() {
+			var wp = wp || {}; 
+			setTimeout(function() {
+			    setGlobalwp(wp);
+			}, 300);
+
 			jQuery('#inbound-shortcodes-popup').livequery( function() {
 				InboundShortcodes.load();
+			});
+			jQuery("body").on('click', '.new-inbound-shortcode', function () {
+				console.log('clciekd');
+
+				setTimeout(function() {
+				jQuery("#TB_ajaxContent .inbound-short-list").hide();
+				var length = jQuery(".inbound-short-list").length;
+				console.log(length);
+				if(length < 2){
+					//
+				}
+				var test = jQuery(".inbound-short-list").clone();
+				//jQuery("#TB_ajaxContent .inbound-short-list").remove();
+				var count = jQuery("#TB_ajaxContent .inbound-short-list").length;
+				console.log(count);
+				if (count > 1){
+					jQuery("#TB_ajaxContent .inbound-short-list:not(:first-child)").remove();
+				}
+				jQuery('.short-list-inbound').append(test);
+				jQuery("#TB_ajaxContent .inbound-short-list").show();
+				}, 100);
+			});
+			jQuery("body").on('click', '.launch-marketing-sc', function () {
+				var test = jQuery("#choose-inbound-shortcode").clone();
+
+				//window.tb_remove();
+				var shortcode = jQuery(this).attr('data-launch-sc');
+
+				setTimeout(function() {
+				 tb_show( inbound_load.pop_title, inbound_load.image_dir + 'popup.php?popup=' + shortcode + '&width=' + 900 + "&path=" + encodeURIComponent(inbound_load.image_dir));
+				        }, 500);
+
 			});
 			jQuery("body").on('click', '.inbound-shortcodes-insert-two', function () {
 				InboundShortcodes.insert_shortcode();
@@ -947,5 +1032,41 @@
 
 				window.history.replaceState({}, document.title, window_url);
 			}
+
+			jQuery('#list-add-toggle').click( function() {
+				jQuery('#list-add-wrap').toggleClass( 'wp-hidden-child' );
+				return false;
+			});
+
+			jQuery('#list-add-submit').click( function() {
+				var list_val = jQuery('#newformlist').val();
+				var list_parent_val = jQuery('#newlist_parent').val();
+				if(list_val == ''){
+
+					jQuery('#newformlist').focus();
+
+					return false;
+
+				} else {
+					jQuery.ajax({
+						type:"POST",
+						url: ajaxurl,
+						data: "list_val=" + list_val +  "&list_parent_val=" + list_parent_val + "&action=inbound_form_add_lead_list",
+						success: function(data) {
+							var returned = jQuery.parseJSON(data);
+							if(returned.status != 'false'){
+								jQuery('#inbound_shortcode_lists').append('<option value="'+ returned.term_id +'">' + returned.name + '</option>');
+								jQuery('#list-ajax-response').html('List Added. Please Select From Above.');
+							} else {
+
+								alert('Not able to add list at this monent. Please try again');
+							}
+						}
+					});
+
+				}
+
+			});
+
 
 		});

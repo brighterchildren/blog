@@ -1,3 +1,4 @@
+
 var inbound_data = inbound_data || {};
 // Ensure global _gaq Google Analytics queue has been initialized.
 var _gaq = _gaq || [];
@@ -51,68 +52,12 @@ function countProperties(obj) {
     return count;
 }
 
-function lead_store_url_params(){
-	var urlParams = {};
-
-	(function () {
-		var e,
-			d = function (s) { return decodeURIComponent(s).replace(/\+/g, " "); },
-			q = window.location.search.substring(1),
-			r = /([^&=]+)=?([^&]*)/g;
-
-		while (e = r.exec(q)) {
-			if (e[1].indexOf("[") == "-1")
-				urlParams[d(e[1])] = d(e[2]);
-			else {
-				var b1 = e[1].indexOf("["),
-					aN = e[1].slice(b1+1, e[1].indexOf("]", b1)),
-					pN = d(e[1].slice(0, b1));
-
-				if (typeof urlParams[pN] != "object")
-					urlParams[d(pN)] = {},
-					urlParams[d(pN)].length = 0;
-
-				if (aN)
-					urlParams[d(pN)][d(aN)] = d(e[2]);
-				else
-					Array.prototype.push.call(urlParams[d(pN)], d(e[2]));
-
-			}
-		}
-	})();
-
-	if (JSON) {
-		  for (var k in urlParams) {
-				if (typeof urlParams[k] == "object") {
-				  for (var k2 in urlParams[k])
-					createCookie(k2, urlParams[k][k2], 30);
-				} else {
-					createCookie(k, urlParams[k], 30);
-				}
-		   }
-	}
-}
 
 function get_inbound_form_value(el) {
   var value = el.value;
   return value;
 }
 
-function lead_get_cookies_array() {
-
-    var cookies = {};
-
-    if (document.cookie && document.cookie != '') {
-        var split = document.cookie.split(';');
-        for (var i = 0; i < split.length; i++) {
-            var name_value = split[i].split("=");
-            name_value[0] = name_value[0].replace(/^ /, '');
-            cookies[decodeURIComponent(name_value[0])] = decodeURIComponent(name_value[1]);
-        }
-    }
-    jQuery.totalStorage('inbound_cookies', cookies); // store cookie data
-    return cookies;
-}
 
 // Build Form Object
 function inbound_map_fields(el, value, Obj) {
@@ -245,7 +190,7 @@ function run_field_map_function(el, lookingfor) {
 
 function return_mapped_values(this_form) {
 	// Map form fields
-	jQuery(this_form).find('input,textarea,select').each(function() {
+	jQuery(this_form).find('input[type!="hidden"],textarea,select').each(function() {
 		console.log('run');
 		var this_input = jQuery(this);
 		var this_input_val = this_input.val();
@@ -282,9 +227,9 @@ function release_form_sub(this_form, element_type, form_type){
 
 	if (element_type=='A') {
 		this_form.unbind('wpl-track-me');
-
-		if (a_href) {
-			window.location = a_href;
+		var link = this_form.attr('href');
+		if (link) {
+			window.location = link;
 		} else {
 			location.reload();
 		}
@@ -378,11 +323,12 @@ function inbound_form_submit(this_form, e) {
 	// Set variables after mapping
 	inbound_data['email'] = (!inbound_data['email']) ? this_form.find('.inbound-email').val() : inbound_data['email'];
 	inbound_data['form_name'] = this_form.find('.inbound_form_name').val() || "Not Found";
+	inbound_data['form_id'] = this_form.find('.inbound_form_id').val() || "Not Found";
 	inbound_data['first_name'] = (!inbound_data['first_name']) ? inbound_data['name'] : inbound_data['first_name'];
-	inbound_data['last_name'] = inbound_data['last_name'] || false;
-	inbound_data['phone'] = inbound_data['phone'] || false;
-	inbound_data['company'] = inbound_data['company'] || false;
-	inbound_data['address'] = inbound_data['address'] || false;
+	inbound_data['last_name'] = inbound_data['last_name'] || '';
+	inbound_data['phone'] = inbound_data['phone'] || '';
+	inbound_data['company'] = inbound_data['company'] || '';
+	inbound_data['address'] = inbound_data['address'] || '';
 
 	// Fallbacks for values
 	inbound_data['name'] = (inbound_data['first_name'] && inbound_data['last_name']) ? inbound_data['first_name'] + " " + inbound_data['last_name'] : inbound_data['name'];
@@ -442,10 +388,10 @@ function inbound_form_submit(this_form, e) {
 }
 
 jQuery(document).ready(function($) {
-	lead_store_url_params(); // store get params as cookies on page load
-	var cookies = lead_get_cookies_array(); // Get ze cookies
 
+	var cookies = InboundAnalytics.Utils.getAllCookies();
 	var inbound_store = jQuery.totalStorage('inbound_cookies');
+
 	// loop through cookies and assign to inbound_data object
 	if (typeof inbound_store =='object' && inbound_store) {
 		for(var name in inbound_store) {
@@ -455,12 +401,12 @@ jQuery(document).ready(function($) {
 		  }
 		}
 	}
-	//console.log(inbound_data);
-	if ( jQuery('.wpl-search-box').length ) {
+
+
 	/* Core Inbound Search Tracking Script */
 	jQuery("body").on('submit', '.wpl-search-box', function (e) {
 		var inbound_search_data = jQuery.totalStorage('inbound_search') || {},
-		$this_form = $(this),
+		$this_form = jQuery(this),
 		processed = false;
 		datetime = wplft.track_time;
 		if( $this_form.is(".search-processes") ) {
@@ -469,7 +415,7 @@ jQuery(document).ready(function($) {
 
 		}
 		//return false;
-		$('body, button, input[type="button"], input').css('cursor', 'wait');
+		jQuery('body, button, input[type="button"], input').css('cursor', 'wait');
 		e.preventDefault();
 		var has_email = readCookie('wp_lead_email');
 		var search_count = countProperties(inbound_search_data);
@@ -508,7 +454,7 @@ jQuery(document).ready(function($) {
 						// Unbind form
 						//release_form_sub($this_form, 'FORM', inbound_data['form_type']);
 
-						$('body, button, input[type="button"], input').css('cursor', 'default');
+						jQuery('body, button, input[type="button"], input').css('cursor', 'default');
 						jQuery.totalStorage.deleteItem('inbound_search'); // remove search
 						console.log("search fired");
 						$this_form.unbind('submit');
@@ -531,36 +477,38 @@ jQuery(document).ready(function($) {
 
 
 	});
-	}
 
 
 	/* Core Inbound Form Tracking Script */
-	if ( jQuery('.wpl-track-me').length ) {
 	jQuery("body").on('submit', '.wpl-track-me', function (e) {
 		var inbound_data = inbound_data || {},
 		this_form = jQuery(this),
 		event_type = e.type,
 		is_search = false,
-		form_type = 'normal';
-
+		form_type = 'normal',
+		honey_pot = this_form.find('.stop_dirty_subs');
+		if (honey_pot.length > 0 && honey_pot.val() != "") {
+			alert('Get Lost Spam Bot');
+			return false;
+		}
 
 		inbound_data['form_type'] = inbound_form_type(this_form);
 
 		element_type = 'FORM';
 
 		// halt normal form submission
-		$('body, button, input[type="button"], input').css('cursor', 'wait');
+		jQuery('body, button, input[type="button"], input').css('cursor', 'wait');
 		e.preventDefault();
 
 		// Email Validation Check
-		var inbound_form_exists = $("#inbound-form-wrapper").length;
-		var email_validation = $(".inbound-email.invalid-email").length;
+		var inbound_form_exists = jQuery("#inbound-form-wrapper").length;
+		var email_validation = jQuery(".inbound-email.invalid-email").length;
 		if (email_validation > 0 && inbound_form_exists > 0) {
 			jQuery(".inbound-email.invalid-email").focus();
 			alert("Please enter a valid email address");
 			return false;
 		}
-		$(this_form).trigger("inbound_form_custom_data"); // trigger custom hook
+		jQuery(this_form).trigger("inbound_form_custom_data"); // trigger custom hook
 		data = inbound_form_submit(this_form, e); // big function for processing
 
 		ajax_fallback = this_form.is('.wpl-ajax-fallback');
@@ -570,7 +518,7 @@ jQuery(document).ready(function($) {
 			this_form.removeClass('wpl-track-me'); // release submit
 			set_lead_fallback(data);
 			console.log('ajax conflict stop process');
-			$('body, button, input[type="button"], input').css('cursor', 'default');
+			jQuery('body, button, input[type="button"], input').css('cursor', 'default');
 			var ninja = this_form.is('.ninja-forms-form');
 			var cf7 = this_form.is('.wpcf7-form');
 			if (!ninja && !cf7){
@@ -603,7 +551,7 @@ jQuery(document).ready(function($) {
 
 					release_form_sub(this_form, 'FORM', inbound_data['form_type']);
 
-					$('body, button, input[type="button"], input').css('cursor', 'default');
+					jQuery('body, button, input[type="button"], input').css('cursor', 'default');
 
 					jQuery.totalStorage.deleteItem('page_views'); // remove pageviews
 					jQuery.totalStorage.deleteItem('tracking_events'); // remove events
@@ -620,27 +568,20 @@ jQuery(document).ready(function($) {
 		});
 
 	});
-	}
+
 
 	/* Core Inbound Link Tracking */
-	if ( jQuery('.wpl-track-me').length ) {
+	if ( jQuery('.wpl-track-me-link').length ) {
+
 	jQuery("body").on('click', '.wpl-track-me-link', function (e) {
 
-		this_form = jQuery(this);
-		var have_email = readCookie('wp_lead_email');
-		console.log(have_email);
-
-		// If no data to id the user exit
-		if (typeof (have_email) === "undefined" || have_email === null || have_email === "") {
-			// store local object and build out click record
-			return false;
-		}
+		this_link = jQuery(this);
 
 		var element_type='A';
 		var a_href = jQuery(this).attr("href");
 
 		// process form only once
-		processed = this_form.hasClass('lead_processed');
+		processed = this_link.hasClass('lead_processed');
 		if (processed === true) {
 			return;
 		}
@@ -654,7 +595,7 @@ jQuery(document).ready(function($) {
 
 		e.preventDefault(); // halt normal form
 
-		var tracking_obj = "";
+		var pageviewObj = jQuery.totalStorage('page_views');
 		var page_view_count = countProperties(pageviewObj);
 		//console.log("view count" + page_view_count);
 
@@ -669,7 +610,7 @@ jQuery(document).ready(function($) {
 		} else {
 			var lp_variation = null;
 		}
-		return false;
+
 		jQuery.ajax({
 			type: 'POST',
 			url: inbound_ajax.admin_url,
@@ -679,27 +620,24 @@ jQuery(document).ready(function($) {
 				wp_lead_uid: wp_lead_uid,
 				page_views: page_views,
 				post_type: inbound_ajax.post_type,
-				lp_variation: lp_variation,
-				lp_id: page_id
+				variation: lp_variation,
+				page_id: page_id
 				/* Replace with jquery hook
 					do_action('wpl-lead-collection-add-ajax-data');
 				*/
 			},
-			success: function(user_id){
-					jQuery(this_form).trigger("inbound_form_complete"); // Trigger custom hook
-					jQuery.cookie("wp_lead_id", user_id, { path: '/', expires: 365 });
-					jQuery.totalStorage('wp_lead_id', user_id);
-					this_form.addClass('lead_processed');
-
+			success: function(data){
 					// Unbind form
-					release_form_sub(this_form, 'A');
-
+					release_form_sub(this_link, 'A');
+					//this_link.click();
 					jQuery.totalStorage.deleteItem('page_views'); // remove pageviews
 					jQuery.totalStorage.deleteItem('tracking_events'); // remove events
 					//jQuery.totalStorage.deleteItem('cta_clicks'); // remove cta
+
+					return true;
 				   },
 			error: function(MLHttpRequest, textStatus, errorThrown){
-					//console.log(MLHttpRequest+' '+errorThrown+' '+textStatus); // debug
+					console.log(MLHttpRequest+' '+errorThrown+' '+textStatus); // debug
 
 					// Create fallback localstorage object
 					var conversionObj = new Array();
@@ -712,10 +650,10 @@ jQuery(document).ready(function($) {
 
 										page_views: page_views,
 										post_type: inbound_ajax.post_type,
-										lp_variation: lp_variation,
+										variation: lp_variation,
 										// type: 'form-completion',
 										form_input_values : all_form_fields,
-										lp_id: page_id
+										page_id: page_id
 										});
 
 					jQuery.totalStorage('failed_conversion', conversionObj); // store failed data
@@ -723,7 +661,7 @@ jQuery(document).ready(function($) {
 
 					// If fail, cookie form data and ajax submit on next page load
 					console.log('ajax fail');
-					release_form_sub( this_form , element_type );
+					release_form_sub( this_link , element_type );
 
 				}
 		});

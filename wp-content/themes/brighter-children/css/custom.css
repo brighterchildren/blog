@@ -336,12 +336,29 @@
 }
 
 /* Children page */
-.pf-caption {
+.country-intro {
+	font-size: 18px;
+}
+
+.child-feature {
+	text-align: center;
+}
+
+.child-feature img {
+	margin: 0 auto;
+}
+
+.child-feature .title {
 	color: #656565;
+	font-size: 20px;
+}
+
+.child-feature i {
+	font-size: 50px;
 }
 
 .portfolio-item .p-img-container .pf-caption span.title {
-	background: #E8CD31;
+	/*background: #E8CD31;*/
 }
 
 

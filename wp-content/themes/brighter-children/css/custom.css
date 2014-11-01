@@ -455,6 +455,23 @@
 .number { font-size: 2.65em; margin-right: 3px; vertical-align: -6px; }
 .stats-more { margin-left: 20px; clear: left; margin-bottom: 20px; }
 
+/* Children page */
+
+.children-intro {
+	font-size: 18px;
+}
+
+.btn-donate {
+	color: #878787;
+    /*height: 70px;*/
+    /*width: 296px;*/
+    font-size: 18px;
+    padding: 10px 15px;
+    /*margin: 0px 15px 15px 0px;*/
+    /*text-align: left;*/
+    background: none repeat scroll 0% 0% #FFF4B2;
+}
+
 /* Financials page */
 
 blockquote {

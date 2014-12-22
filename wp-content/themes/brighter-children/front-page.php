@@ -149,7 +149,7 @@ get_header(); ?>
 						<!-- Icon -->
 						<i class="fa fa-user red"></i>
 						<!-- Model Counter -->
-						<span class="m-counter" data-from="0" data-to="12" data-speed="2000" data-refresh-interval="100">12</span>
+						<span class="m-counter" data-from="0" data-to="42" data-speed="2000" data-refresh-interval="100">12</span>
 						<!-- Paragraph -->
 						<p>children sponsored</p>
 					</div>
@@ -183,7 +183,7 @@ get_header(); ?>
 						<!-- Icon -->
 						<i class="fa fa-group purple"></i>
 						<!-- Model Counter -->
-						<span class="m-counter" data-from="0" data-to="4" data-speed="2000" data-refresh-interval="100">4</span>
+						<span class="m-counter" data-from="0" data-to="3" data-speed="2000" data-refresh-interval="100">3</span>
 						<!-- Paragraph -->
 						<p>partner organizations</p>
 					</div>
@@ -202,10 +202,10 @@ get_header(); ?>
 		<div class="heading shadow">
 			<!-- Heading -->
 			<h2>Sponsored Children</h2>
-			<h3>This year our goal is to fund education for 30 students</h3>
+			<h3>This year our goal is to fund education for 60 students</h3>
 		</div>
 		<div class="row">
-			<div class="col-md-3 col-sm-6">
+			<div class="col-md-4 col-sm-8">
 				<!-- Branch Information -->
 				<div class="branch-info animated">
 					<!-- Icon -->
@@ -213,11 +213,11 @@ get_header(); ?>
 					<!-- Heading -->
 					<h4>Colombia</h4>
 					<!-- Number Counter -->
-					<span>6</span>
+					<span>20</span>
 					<div class="clearfix"></div>
 				</div>
 			</div>
-			<div class="col-md-3 col-sm-6">
+			<div class="col-md-4 col-sm-8">
 				<!-- Branch Information -->
 				<div class="branch-info animated">
 					<!-- Icon -->
@@ -225,11 +225,11 @@ get_header(); ?>
 					<!-- Heading -->
 					<h4>Kenya</h4>
 					<!-- Number Counter -->
-					<span>9</span>
+					<span>25</span>
 					<div class="clearfix"></div>
 				</div>
 			</div>
-			<div class="col-md-3 col-sm-6">
+			<div class="col-md-4 col-sm-8">
 				<!-- Branch Information -->
 				<div class="branch-info animated">
 					<!-- Icon -->
@@ -237,19 +237,7 @@ get_header(); ?>
 					<!-- Heading -->
 					<h4>India</h4>
 					<!-- Number Counter -->
-					<span>6</span>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6">
-				<!-- Branch Information -->
-				<div class="branch-info animated">
-					<!-- Icon -->
-					<i class="fa fa-map-marker green"></i>
-					<!-- Heading -->
-					<h4>Philippines</h4>
-					<!-- Number Counter -->
-					<span>9</span>
+					<span>15</span>
 					<div class="clearfix"></div>
 				</div>
 			</div>
@@ -267,9 +255,6 @@ get_header(); ?>
 			<!-- Location Icon and Name -->
 			<i class="fa fa-map-marker us-icon orange animated"></i>
 			<span class="us animated">Colombia</span>
-			<!-- Location Icon and Name -->
-			<i class="fa fa-map-marker ras-icon green animated"></i>
-			<span class="ras animated">Philippines</span>
 			</div>
 	</div>
 </div>
@@ -299,8 +284,6 @@ get_header(); ?>
 				<a href="http://www.colombiachildcare.org"><img src="wp-content/themes/brighter-children/img/partner/colombia-childcare.png" width="150" height="55" class="img-responsive" alt="Colombia Childcare" /></a>
 				<!-- Image -->
 				<a href="http://villageprojectafrica.org/"><img src="wp-content/themes/brighter-children/img/partner/village-project-africa.jpg" width="150" height="55" class="img-responsive" alt="Village Project Africa" /></a>
-				<!-- Image -->
-				<a href="http://gridministries.org/"><img src="wp-content/themes/brighter-children/img/partner/hope-4-kidz.jpg" width="150" height="55" class="img-responsive" alt="Hope 4 Kidz International" /></a>
 			</div>
 		</div>
 	</div>

@@ -33,7 +33,7 @@
 						Brighter Children is an all-volunteer 501(c)(3) non-profit organization &amp; all proceeds go to charity
 					</div>
 					<div class="grassroots">
-						<a href="http://www.grassroots.org" data-mce-href="http://www.grassroots.org"><img src="../wp-content/themes/brighter-children/img/partner/grassroots.gif" alt="grassroots.org logo" data-mce-src="" /></a>
+						<a href="http://www.grassroots.org" data-mce-href="http://www.grassroots.org"><img src="/wp-content/themes/brighter-children/img/partner/grassroots.gif" alt="grassroots.org logo" data-mce-src="" /></a>
 					</div>
 				</div>
 			</div>

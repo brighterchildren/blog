@@ -112,7 +112,7 @@ get_header(); ?>
 							<div class="col-md-4 col-sm-4">
 								<div class="t-content-details">
 									<!-- User Message -->
-									<h2>Tayyabba<span>, Colombia</span></h2>
+									<h2>Tayyabba<span>, India</span></h2>
 									<!-- User's comment -->
 									<blockquote>
 										<p>I have always been known as an obedient and good student. I like to sing and when I grow up I want to become a teacher.</p>

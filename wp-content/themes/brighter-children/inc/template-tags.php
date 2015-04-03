@@ -16,9 +16,10 @@ function brighter_children_paging_nav() {
 	if ( $GLOBALS['wp_query']->max_num_pages < 2 ) {
 		return;
 	}
+	/*
 	?>
 	<nav class="navigation paging-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'brighter-children' ); ?></h1>
+		<!-- <!-- <h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'brighter-children' ); ?></h1> --> -->
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
@@ -32,6 +33,7 @@ function brighter_children_paging_nav() {
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
 	<?php
+	*/
 }
 endif;
 

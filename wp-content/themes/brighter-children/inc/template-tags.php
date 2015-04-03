@@ -68,7 +68,7 @@ if ( ! function_exists( 'brighter_children_posted_on' ) ) :
 function brighter_children_posted_on() {
 	$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-		$time_string .= '<time class="updated" datetime="%3$s">%4$s</time>';
+		// $time_string .= '<time class="updated" datetime="%3$s">%4$s</time>';
 	}
 
 	$time_string = sprintf( $time_string,
@@ -78,7 +78,7 @@ function brighter_children_posted_on() {
 		esc_html( get_the_modified_date() )
 	);
 
-	printf( __( '<span class="posted-on">Posted on %1$s</span><span class="byline"> by %2$s</span>', 'brighter-children' ),
+	printf( __( '<span class="posted-on">%1$s</span><br /><span class="byline">By %2$s</span>', 'brighter-children' ),
 			$time_string,
 		sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s">%2$s</a></span>',
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),

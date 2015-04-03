@@ -149,7 +149,7 @@ get_header(); ?>
 						<!-- Icon -->
 						<i class="fa fa-user red"></i>
 						<!-- Model Counter -->
-						<span class="m-counter" data-from="0" data-to="42" data-speed="2000" data-refresh-interval="100">12</span>
+						<span class="m-counter" data-from="0" data-to="72" data-speed="2000" data-refresh-interval="100">72</span>
 						<!-- Paragraph -->
 						<p>children sponsored</p>
 					</div>
@@ -161,7 +161,7 @@ get_header(); ?>
 						<i class="fa fa-money green"></i>
 						<span class="dollar">$</span>
 						<!-- Model Counter -->
-						<span class="m-counter" data-from="0" data-to="4475" data-speed="2000" data-refresh-interval="100">4475</span>
+						<span class="m-counter" data-from="0" data-to="23575" data-speed="2000" data-refresh-interval="100">23575</span>
 						<!-- Paragraph -->
 						<p>in sponsored education</p>
 					</div>
@@ -172,9 +172,9 @@ get_header(); ?>
 						<!-- Icon -->
 						<i class="fa fa-thumbs-up lblue"></i>
 						<!-- Model Counter -->
-						<span class="m-counter" data-from="0" data-to="175" data-speed="2000" data-refresh-interval="100">175</span>
+						<span class="m-counter" data-from="0" data-to="104650" data-speed="2000" data-refresh-interval="100">104,650</span>
 						<!-- Paragraph -->
-						<p>supporters</p>
+						<p>educational hours delivered</p>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6">

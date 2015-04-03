@@ -163,7 +163,13 @@ $(document).ready(function(){
 	$('.m-counter').waypoint(function(down){
 		if(!$(this).hasClass('stop-counter'))
 		{
-			$(this).countTo();
+			$(this).countTo({
+			  formatter: function (value, options) {
+    			value = value.toFixed(options.decimals);
+			    value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+			    return value;
+  			  }
+  			});
 			$(this).addClass('stop-counter');
 		}
 	}, { 

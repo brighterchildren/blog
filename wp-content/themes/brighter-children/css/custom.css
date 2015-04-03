@@ -3,10 +3,6 @@
 	display: none !important;
 }
 
-.wrapper {
-	font-size: 20px;
-}
-
 .header .navbar-default .navbar-brand span.logo {
 	width: 200px;
 	height: 90px;
@@ -19,7 +15,7 @@
     line-height: 55px;
 }
 
-.navbar-collapse {
+.nav-donate {
 	margin-right: -10px;
 	float: right !important;
 	margin: 0px;
@@ -27,11 +23,11 @@
     list-style: none outside none;
 }
 
-.header .nav-donate > li a {
+.header .navbar-default .navbar-nav > li a {
 	background: #FFF4B2;
 }
 
-.header .nav-donate > li a:hover {
+.header .navbar-default .navbar-nav > li a:hover {
     color: #4C82F2;
 }
 
@@ -369,7 +365,6 @@
 /* Footer */
 .footer {
 	text-align: center;
-	font-size: 13px;
 	color: rgba(239, 229, 231, 0.77);
 	background: #221F20;
 }
@@ -399,7 +394,7 @@
 #about_hero { background: url('/wp-content/uploads/2014/01/heropic5.jpg') no-repeat scroll 0px 0px transparent; overflow: hidden; }
 #about_hero p { width: 400px; font-size: 34px; margin: 27px 0px 0px 45px; }
 #about_hero p { color: #FFF; font-size: 26px; margin: 120px 0px 0px 21px; display: inline-block; line-height: 1.3em; background-color: #94B2FC; padding: 2px; }
-#about .intro { margin-bottom: 20px; }
+#about .intro { font-size: 1.5em; margin-bottom: 20px; }
 /*#about h2 { color: rgb(73, 112, 255); font-weight: bold; }*/
 .nav-container {
     width: 100%;
@@ -454,14 +449,6 @@
     height: 100%;
 }
 
-#mc_embed_signup input {
-	/*float: left;*/
-	/*width: 100px;*/
-	width: 100%;
-	font-size: 24px;
-	margin-bottom: 10px;
-}
-
 .stats { margin-bottom: 10px; width: 296px; display: inline; float: left; margin-left: 20px; margin-right: 10px; }
 .stats ul { list-style: none outside none; margin-left: 0px; padding-left: 0px; }
 .stats li {margin-bottom: 5px; line-height: 30px !important; }
@@ -486,14 +473,6 @@
 }
 
 /* Financials page */
-
-.financials h4 {
-	font-size: 24px;
-}
-
-.financials p {
-	font-size: 14px;
-}
 
 blockquote {
     margin-left: 70px;
@@ -559,18 +538,13 @@ blockquote {
 
 /* Team page */
 .post-1270 {
-	/*text-align: center;*/
+	text-align: center;
 }
 
 /* Blog posts */
 
-.container .main {
+.container main {
 	margin-top: 40px;
-}
-
-.container img {
-	max-width: 100%;
-	height: auto;
 }
 
 .author {

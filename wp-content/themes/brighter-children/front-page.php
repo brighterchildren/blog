@@ -202,7 +202,7 @@ get_header(); ?>
 		<div class="heading shadow">
 			<!-- Heading -->
 			<h2>Sponsored Children</h2>
-			<h3>This year our goal is to fund education for 60 students</h3>
+			<h3>This year our goal is to fund education for 150 students</h3>
 		</div>
 		<div class="row">
 			<div class="col-md-4 col-sm-8">
@@ -213,7 +213,7 @@ get_header(); ?>
 					<!-- Heading -->
 					<h4>Colombia</h4>
 					<!-- Number Counter -->
-					<span>20</span>
+					<span>50</span>
 					<div class="clearfix"></div>
 				</div>
 			</div>
@@ -225,7 +225,7 @@ get_header(); ?>
 					<!-- Heading -->
 					<h4>Kenya</h4>
 					<!-- Number Counter -->
-					<span>25</span>
+					<span>50</span>
 					<div class="clearfix"></div>
 				</div>
 			</div>
@@ -237,7 +237,7 @@ get_header(); ?>
 					<!-- Heading -->
 					<h4>India</h4>
 					<!-- Number Counter -->
-					<span>15</span>
+					<span>50</span>
 					<div class="clearfix"></div>
 				</div>
 			</div>

@@ -39,7 +39,7 @@
 				if ( $categories_list && brighter_children_categorized_blog() ) :
 			?>
 			<span class="cat-links">
-				<?php printf( __( 'Posted in %1$s', 'brighter-children' ), $categories_list ); ?>
+				<?php // printf( __( 'Posted in %1$s', 'brighter-children' ), $categories_list ); ?>
 			</span>
 			<?php endif; // End if categories ?>
 

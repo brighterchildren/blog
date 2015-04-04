@@ -107,18 +107,17 @@ get_header(); ?>
 							</div>
 							<div class="col-md-2 col-sm-2">
 								<!-- User Image -->
-								<img src="wp-content/themes/brighter-children/img/Tayabba-21.jpg" width="189" height="189" class="img-responsive img-circle" alt="user" />
+								<img src="wp-content/themes/brighter-children/img/Edith-189x189.jpg" width="189" height="189" class="img-responsive img-circle" alt="user" />
 							</div>
 							<div class="col-md-4 col-sm-4">
 								<div class="t-content-details">
 									<!-- User Message -->
-									<h2>Tayyabba<span>, India</span></h2>
+									<h2>Edith<span>, Colombia</span></h2>
 									<!-- User's comment -->
 									<blockquote>
-										<p>I have always been known as an obedient and good student. I like to sing and when I grow up I want to become a teacher.</p>
+										<p>My favorite subject in school is art and I enjoy playing the flute. When I grow up I want to improve the values of my city.</p>
 									</blockquote>
 								</div>
-								<a id="learn-more" href="#"></a>
 							</div>
 						</div>
 					</div>

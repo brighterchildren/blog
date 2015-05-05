@@ -57,6 +57,10 @@
     /*background: url('../img/hero-classroom.jpg') no-repeat fixed center center #FFF;*/
 }
 
+.event-hero {
+	background: transparent url("../img/parallax-feature.jpg") repeat fixed 0% 0% !important;
+}
+
 .header .navbar-default .navbar-brand span.logo {
 	line-height: 40px;
 }
@@ -175,12 +179,16 @@
 
 .cantjoin {
 	display: block;
-	color: #000;
+	color: #F7A253;
 	font-weight: bold;
 }
 
-.cantjoin a, .cantjoin a:hover {
-	color: #4C82F2;
+.cantjoin a {
+	color: #F7A253;
+}
+
+.cantjoin a:hover {
+	color: #D58512;
 }
 
 .purpose {
@@ -376,6 +384,14 @@
 .footer .nav a {
 	margin: 0 5px;
 	color: rgba(239, 229, 231, 0.77);
+}
+
+.footer .email input {
+	padding: 14px 30px;
+	font-size: 16px;
+	color: #000000;
+	border: 1px solid #CCC;
+	transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
 }
 
 .footer .grassroots {

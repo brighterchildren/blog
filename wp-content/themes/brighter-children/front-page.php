@@ -13,22 +13,6 @@
 
 get_header(); ?>
 
-<!-- Event Start -->
-
-<div class="parallax-model-three hero event-hero feature">
-	<div class="container">
-		<div class="heading shadow">
-			<!-- Heading -->
-			<h2>Spring Fling</h2>
-			<h4>Saturday, May 16th 10pm-3:30am</h4>
-			<!-- Paragraph -->
-			<p>All night event to bring in the spring with an open bar, live cover band and friends while supporting a good cause!</p>
-			<a href="http://www.eventbrite.com/e/brighter-children-spring-fling-featuring-roctopus-thero-taylor-wise-tickets-16645749886?aff=bcsite" class="btn btn-warning btn-lg btn-attend join-large"><i class="fa fa-ticket fin-icon"></i>Buy Tickets</a>
-			<span class="cantjoin">Can't join? <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=J3JNX5R96KSHA&lc=US&item_name=Brighter%20Children&no_note=0&cn=Add%20special%20instructions%20to%20the%20seller%3a&no_shipping=1&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted">Donate</a></span>
-		</div>		
-	</div>
-</div>
-
 <!-- Hero Start -->
 
 <div class="parallax-model-three hero feature">

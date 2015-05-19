@@ -398,6 +398,10 @@
 	margin: 50px 0 20px 0;
 }
 
+.social a.instagram i {
+	background: #A5664D;
+}
+
 /* Style elements */
 .container .heading hr {
     width: 150px;

@@ -77,7 +77,7 @@ var WRInitTime=(new Date()).getTime();
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="nav-donate" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="https://donate.brighterchildren.org/checkout/donation?eid=50910">Sponsor</a></li>
+						<li><a href="/sponsor">Sponsor</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div>

@@ -12,14 +12,20 @@
 }
 
 .header .navbar-default .navbar-nav > li a {
-    line-height: 55px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.header .navbar-default .navbar-nav > li > a:active, .header .navbar-default .navbar-nav > li > a:focus {
+    background: #FFF4B2 !important;
+    color: #000000;
 }
 
 .nav-donate {
 	margin-right: -10px;
 	float: right !important;
 	margin: 0px;
-	padding: 16px 9px;
+	padding: 3px 9px;
     list-style: none outside none;
 }
 
@@ -50,7 +56,8 @@
 }
 
 .header .navbar-default .navbar-nav > li a {
-	padding: 0px 20px;
+	padding: 5px 20px;
+	margin-top: 5px;
 }
 
 .banner-container {
@@ -750,14 +757,22 @@ blockquote {
 .appeal {
 	font-size: 24px;
 }
+}
 
 @media (min-width: 768px){
 .header .navbar-default .navbar-brand span.logo {
-	margin: 15px;
+	margin: 15px 0 !important;
 }
 
 .header .navbar-default .navbar-nav > li a {
 	font-size: 18px;
+    margin-left: 20px;
+    padding: 0px 20px;
+    line-height: 55px;
+}
+
+.nav-donate {
+	padding: 16px 9px;
 }
 
 .container .heading.shadow h2, .container .heading.shadow h3 {

@@ -233,7 +233,7 @@
 
 .hero {
 	background: url('../img/hero-classroom.jpg') no-repeat center center fixed;
-	padding: 20px 0px 0px 0px;
+	padding: 20px 0px 40px;
 }
 
 .hero h3 {
@@ -475,6 +475,133 @@
 .number { font-size: 2.65em; margin-right: 3px; vertical-align: -6px; }
 .stats-more { margin-left: 20px; clear: left; margin-bottom: 20px; }
 
+/* Sponsor page */
+#post-68 .entry-title {
+	display: none;
+}
+
+#post-1301 .entry-title {
+	display: none;
+}
+
+.club h1 {
+	text-align: center;
+	color: #fff;
+	font-size: 75px;
+	font-weight: bold;
+}
+
+.club .heading {
+	background: url('../img/sponsor_hero_1x.jpg') no-repeat center center;
+	padding-bottom: 50px;
+	margin-bottom: 0px;
+}
+
+.appeal {
+	font-family: "Open Sans Condensed",sans-serif;
+	color: #fff;
+	font-size: 26px;
+	line-height: 36px;
+	margin-top: 18px;
+	margin-bottom: 9px;
+}
+
+.btn-sponsor {
+	text-transform: uppercase;
+	padding: 30px 60px;
+	font-size: 32px;
+	font-family: 'Open Sans Condensed';
+	font-weight: 500;
+	border-radius: 10px;
+}
+
+.club .btn-sponsor {
+	margin-top: 30px;
+}
+
+.receive {
+	font-size: 50px;
+	background: #E8E8E8;
+	padding: 20px 20px 20px;
+}
+
+.receive h1 {
+	color: #323232;
+	font-size: 60px;
+}
+
+.club hr {
+	border-top: 5px solid #609CEE !important;
+}
+.padd {
+	padding: 80px 0px 90px;
+}
+
+.receive .m-three-item {
+	height: 215px;
+}
+
+.yreceive {
+	background: #fff;
+	/*padding: 20px 0px;*/
+	padding: 20px 20px;
+
+}
+
+.yreceive h1 {
+	color: #323232;
+	font-size: 60px;
+}
+
+.yreceive .m-three-item {
+	border: 3px solid #DFDFDF; 
+	font-size: 18px;
+	height: 195px;
+}
+
+.costs {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.costs hr {
+	color: #323232;
+	border-top: 5px solid #323232 !important;
+    width: 150px;
+}
+
+.costs .btn-sponsor {
+	margin: 30px 0 20px;
+}
+
+.costs p {
+	font-size: 18px;
+}
+
+.receive p {
+	padding-top: 20px;
+}
+
+.tuition {
+	background: #ffffff url("../img/tuition_1x.png") no-repeat center center !important;
+	height: 80px;
+}
+
+.textbooks {
+	background: #ffffff url("../img/textbooks_1x.png") no-repeat center center !important;
+	height: 80px;
+}
+
+.bus {
+	background: #ffffff url("../img/bus_1x.png") no-repeat center center !important;
+	height: 80px;
+}
+
+.healthcare {
+	background: #ffffff url("../img/healthcare_1x.png") no-repeat center center !important;
+	height: 80px;
+}
+
 /* Children page */
 
 .children-intro {
@@ -614,6 +741,14 @@ blockquote {
     font-size: 24px;
     line-height: 28px;
 }
+
+.club h1 {
+    font-size: 40px;
+
+}
+
+.appeal {
+	font-size: 24px;
 }
 
 @media (min-width: 768px){
@@ -700,4 +835,3 @@ blockquote {
 	font-size: 21px;
 }
 }
-
